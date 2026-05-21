@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Erica & Emilio · 18 · IX · MMXXVI</title>
+<meta name="description" content="Invitación de Matrimonio · Erica Zuluaga & Emilio García · 18 de Septiembre 2026">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='47' fill='%231B3A8C'/%3E%3Ctext x='50' y='64' font-size='38' text-anchor='middle' fill='white' font-family='Georgia%2Cserif' font-style='italic'%3E%26%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ══════════════════════════════════════════
+   VARIABLES
+══════════════════════════════════════════ */
+:root{
+  --cobalt:    #1B3A8C;
+  --indigo:    #0D265C;
+  --cobalt-m:  #2557D6;
+  --cobalt-l:  #5B8EE8;
+  --cobalt-xl: #A0BEF0;
+  --cobalt-p:  #D4E4F7;
+  --pale:      #EBF2FF;
+  --pale-l:    #F4F8FF;
+  --white:     #FFFFFF;
+  --line:      rgba(27,58,140,.12);
+  --line-m:    rgba(27,58,140,.25);
+  --line-s:    rgba(27,58,140,.07);
+  --t-dark:    #0D265C;
+  --t-mid:     #2557D6;
+  --t-soft:    #5B8EE8;
+  --fs: 'Cormorant Garamond', Georgia, serif;
+  --fc: 'Great Vibes', cursive;
+  --fn: 'Montserrat', sans-serif;
+  --shadow-sm: 0 1px 12px rgba(13,38,92,.07);
+  --shadow:    0 2px 24px rgba(13,38,92,.10);
+}
+
+/* ══════════════════════════════════════════
+   RESET
+══════════════════════════════════════════ */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--white);color:var(--t-dark);font-family:var(--fn);font-weight:400;overflow-x:hidden;line-height:1.6}
+img{max-width:100%}
+button{cursor:pointer;font-family:var(--fn)}
+input,textarea,select{font-family:var(--fn)}
+a{color:inherit;text-decoration:none}
+
+/* ══════════════════════════════════════════
+   ANIMACIONES
+══════════════════════════════════════════ */
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes blink{0%,100%{opacity:.9}50%{opacity:.45}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes shimmer{0%{left:-100%}100%{left:150%}}
+@keyframes wave{0%,100%{transform:scaleY(.35)}50%{transform:scaleY(1)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ══════════════════════════════════════════
+   OVERLAY
+══════════════════════════════════════════ */
+#overlay{
+  position:fixed;inset:0;z-index:9999;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  cursor:pointer;transition:opacity 1.2s ease,visibility 1.2s;overflow:hidden;
+  background:#0D265C;
+}
+#overlay.out{opacity:0;visibility:hidden;pointer-events:none}
+.o-bg{position:absolute;inset:0;z-index:0}
+.o-bg img{width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;opacity:.18}
+.o-veil{
+  position:absolute;inset:0;z-index:1;
+  background:linear-gradient(to bottom,rgba(13,38,92,.55) 0%,rgba(13,38,92,.2) 40%,rgba(13,38,92,.8) 100%);
+}
+.o-content{
+  position:relative;z-index:10;text-align:center;
+  animation:fadeUp 1.2s ease .1s both;
+  padding:0 2rem;
+}
+.o-seal{
+  width:clamp(90px,18vw,130px);height:clamp(90px,18vw,130px);
+  margin:0 auto 2rem;animation:float 5s ease-in-out infinite;
+}
+.o-pre{
+  display:block;font-family:var(--fn);font-size:.62rem;font-weight:500;
+  letter-spacing:.55em;text-transform:uppercase;
+  color:var(--cobalt-p);opacity:.8;margin-bottom:1.2rem;
+}
+.o-names{
+  font-family:var(--fc);font-size:clamp(4rem,14vw,9rem);
+  color:#fff;line-height:1;margin-bottom:.3em;
+  text-shadow:0 2px 40px rgba(0,0,0,.4);
+}
+.o-amp{font-family:var(--fs);font-size:clamp(.9rem,2.5vw,1.5rem);display:block;color:var(--cobalt-xl);letter-spacing:.4em;font-style:italic;margin:.1em 0}
+.o-date{
+  font-family:var(--fs);font-size:clamp(.8rem,2vw,1rem);
+  letter-spacing:.42em;text-transform:uppercase;
+  color:var(--cobalt-p);font-weight:300;margin-bottom:2.2rem;opacity:.85;
+}
+.o-rule{
+  width:60px;height:1px;background:rgba(160,190,240,.4);
+  margin:0 auto 1.6rem;
+}
+.o-cta{
+  font-family:var(--fn);font-size:.65rem;font-weight:500;
+  color:var(--cobalt-xl);letter-spacing:.4em;text-transform:uppercase;
+  border:1px solid rgba(160,190,240,.35);
+  padding:.55rem 1.8rem;display:inline-block;
+  animation:blink 2.8s ease-in-out infinite;
+}
+
+/* ══════════════════════════════════════════
+   REPRODUCTOR
+══════════════════════════════════════════ */
+#player{
+  position:fixed;bottom:1.5rem;right:1.5rem;z-index:800;
+  display:flex;align-items:center;gap:.6rem;
+  background:var(--white);
+  border:1px solid var(--line-m);
+  padding:.5rem 1.1rem .5rem .5rem;
+  box-shadow:var(--shadow-sm);
+  transition:transform .3s,border-color .3s;
+}
+#player:hover{transform:translateY(-2px);border-color:var(--cobalt)}
+.vinyl{
+  width:38px;height:38px;border-radius:50%;flex-shrink:0;position:relative;
+  background:conic-gradient(var(--cobalt) 0deg,var(--cobalt-m) 60deg,var(--cobalt) 120deg,var(--cobalt-l) 180deg,var(--cobalt) 240deg,var(--cobalt-xl) 300deg,var(--cobalt) 360deg);
+}
+.vinyl::before{content:'';position:absolute;inset:8px;border-radius:50%;background:var(--white)}
+.vinyl::after{content:'';position:absolute;inset:16px;border-radius:50%;background:var(--cobalt)}
+.vinyl.on{animation:spin 3s linear infinite}
+.p-info{display:flex;flex-direction:column}
+.p-title{font-family:var(--fs);font-size:.86rem;color:var(--cobalt);white-space:nowrap;max-width:160px;overflow:hidden;text-overflow:ellipsis;font-weight:400}
+.p-artist{font-size:.58rem;color:var(--cobalt-l);text-transform:uppercase;letter-spacing:.15em;font-weight:500}
+.waves{display:flex;align-items:center;gap:2px;height:16px}
+.waves span{width:2.5px;border-radius:2px;background:var(--cobalt-l);animation:wave 1s ease-in-out infinite}
+.waves span:nth-child(1){height:6px}
+.waves span:nth-child(2){height:12px;animation-delay:.1s}
+.waves span:nth-child(3){height:8px;animation-delay:.2s}
+.waves span:nth-child(4){height:14px;animation-delay:.3s}
+.waves span:nth-child(5){height:6px;animation-delay:.4s}
+.waves.off span{animation-play-state:paused;opacity:.25}
+.p-btn{background:none;border:none;color:var(--cobalt);font-size:1.1rem;display:flex;align-items:center;transition:color .2s}
+.p-btn:hover{color:var(--cobalt-m)}
+
+/* ══════════════════════════════════════════
+   SECCIÓN BASE
+══════════════════════════════════════════ */
+section{position:relative;width:100%;padding:6rem 2rem;border-top:1px solid var(--line)}
+section:first-of-type{border-top:none}
+.sec-inner{max-width:900px;margin:0 auto}
+.sec-center{text-align:center}
+
+.sec-tag{
+  display:block;font-family:var(--fn);font-size:.62rem;font-weight:600;
+  letter-spacing:.5em;text-transform:uppercase;
+  color:var(--cobalt-l);margin-bottom:1rem;
+}
+.sec-title{
+  font-family:var(--fs);font-size:clamp(2.2rem,4.5vw,3.2rem);
+  color:var(--indigo);line-height:1.2;font-weight:300;
+  margin-bottom:.5rem;
+}
+.sec-sub{
+  font-family:var(--fs);font-size:clamp(1rem,2vw,1.2rem);
+  color:var(--cobalt-l);font-style:italic;font-weight:300;
+  margin-bottom:2.5rem;
+}
+
+.ornament{
+  display:flex;align-items:center;gap:1.2rem;
+  margin:1.2rem auto;max-width:280px;justify-content:center;
+}
+.ornament::before,.ornament::after{
+  content:'';flex:1;height:1px;background:var(--line-m);
+}
+.ornament span{color:var(--cobalt-l);font-size:.8rem}
+
+/* ══════════════════════════════════════════
+   SELLO SVG — helper classes
+══════════════════════════════════════════ */
+.seal-svg{display:block}
+.seal-white circle,.seal-white ellipse,.seal-white path,.seal-white rect{stroke:rgba(255,255,255,.75)}
+.seal-white text,.seal-white ellipse[fill],.seal-white rect[fill],.seal-white circle[fill]{fill:rgba(255,255,255,.85)}
+
+/* ══════════════════════════════════════════
+   HERO — BANNER COMPLETO
+══════════════════════════════════════════ */
+#hero{
+  position:relative;
+  width:100%;
+  min-height:75vh;
+  display:flex;flex-direction:column;align-items:center;justify-content:flex-end;
+  padding:0 2rem clamp(3rem,6vh,5rem);
+  border-top:none;
+  overflow:hidden;
+  background:var(--indigo);
+}
+.hero-bg{
+  position:absolute;inset:0;z-index:0;
+}
+.hero-bg img{
+  width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;
+}
+.hero-veil{
+  position:absolute;inset:0;z-index:1;
+  background:linear-gradient(
+    to bottom,
+    rgba(13,38,92,.28) 0%,
+    rgba(13,38,92,.08) 30%,
+    rgba(13,38,92,.52) 65%,
+    rgba(13,38,92,.92) 100%
+  );
+}
+.hero-seal-float{
+  position:absolute;
+  top:clamp(1.5rem,5vh,3rem);
+  left:50%;transform:translateX(-50%);
+  z-index:10;
+  display:flex;align-items:center;justify-content:center;
+  animation:float 6s ease-in-out infinite;
+}
+.hero-seal-disc{
+  width:clamp(120px,17vw,148px);height:clamp(120px,17vw,148px);
+  border-radius:50%;
+  background:rgba(13,38,92,.5);
+  backdrop-filter:blur(4px);
+  border:1px solid rgba(160,190,240,.18);
+  display:flex;align-items:center;justify-content:center;
+}
+.hero-seal-disc svg{
+  width:clamp(100px,14vw,126px);height:clamp(100px,14vw,126px);
+}
+.hero-content{
+  position:relative;z-index:10;
+  text-align:center;
+  width:100%;max-width:700px;
+  animation:fadeUp 1s ease .15s both;
+}
+.hero-tag{
+  font-family:var(--fn);font-size:.6rem;font-weight:500;
+  letter-spacing:.52em;text-transform:uppercase;
+  color:rgba(160,190,240,.75);margin-bottom:1rem;display:block;
+}
+.hero-nos{
+  font-family:var(--fs);font-size:clamp(2.8rem,7vw,5.5rem);
+  color:#fff;line-height:1;font-weight:300;
+  margin-bottom:.25rem;
+  text-shadow:0 2px 20px rgba(0,0,0,.3);
+}
+.hero-names{
+  font-family:var(--fc);font-size:clamp(2rem,5.5vw,3.8rem);
+  color:var(--cobalt-p);margin-bottom:1.1rem;
+}
+.hero-amp{color:var(--cobalt-xl);margin:0 .2em;font-size:.72em}
+.hero-date{
+  font-family:var(--fs);font-size:clamp(.82rem,1.6vw,1rem);
+  letter-spacing:.42em;text-transform:uppercase;
+  color:rgba(160,190,240,.7);font-weight:300;
+}
+
+/* ══════════════════════════════════════════
+   CITA BÍBLICA
+══════════════════════════════════════════ */
+#biblia{background:var(--white)}
+.biblia-rule{
+  width:100%;max-width:340px;margin:0 auto 2rem;
+  display:flex;align-items:center;gap:1rem;
+}
+.biblia-rule::before,.biblia-rule::after{content:'';flex:1;height:1px;background:var(--line-m)}
+.biblia-rule span{color:var(--cobalt-l);font-size:.7rem}
+.biblia-text{
+  font-family:var(--fs);font-style:italic;font-weight:300;
+  font-size:clamp(1.3rem,3vw,2rem);color:var(--indigo);
+  line-height:1.8;max-width:660px;margin:0 auto 1.5rem;
+  text-align:center;
+}
+.biblia-ref{
+  font-family:var(--fn);font-size:.68rem;font-weight:600;
+  letter-spacing:.4em;text-transform:uppercase;color:var(--cobalt-l);
+  text-align:center;display:block;margin-bottom:2rem;
+}
+
+/* ══════════════════════════════════════════
+   CUENTA REGRESIVA
+══════════════════════════════════════════ */
+#countdown{background:var(--pale-l)}
+.cd-inner{text-align:center;max-width:760px;margin:0 auto}
+.cd-grid{
+  display:flex;flex-wrap:wrap;justify-content:center;
+  gap:1px;margin:2.5rem 0;
+  border:1px solid var(--line-m);
+  background:var(--line-m);
+}
+.cd-item{
+  background:var(--white);
+  padding:1.6rem 1.4rem 1.2rem;
+  min-width:100px;flex:1;
+  text-align:center;
+}
+.cd-num{
+  font-family:var(--fs);font-size:clamp(2.8rem,7vw,4.2rem);
+  color:var(--cobalt);line-height:1;display:block;font-weight:300;
+}
+.cd-label{
+  font-family:var(--fn);font-size:.55rem;font-weight:600;
+  letter-spacing:.38em;text-transform:uppercase;
+  color:var(--cobalt-l);margin-top:.4rem;display:block;
+}
+.cd-done{
+  font-family:var(--fc);font-size:clamp(2rem,5vw,3rem);
+  color:var(--cobalt);margin-top:1rem;display:none;
+}
+
+/* Calendario */
+.cal-btn-wrap{position:relative;display:inline-block}
+.cal-main-btn{
+  display:inline-flex;align-items:center;gap:.7rem;
+  background:var(--white);color:var(--cobalt);
+  border:1px solid var(--cobalt);
+  padding:.9rem 2.4rem;font-family:var(--fn);font-size:.75rem;font-weight:600;
+  letter-spacing:.22em;text-transform:uppercase;
+  transition:background .25s,color .25s;
+}
+.cal-main-btn:hover{background:var(--cobalt);color:var(--white)}
+.cal-dropdown{
+  position:absolute;top:calc(100% + .6rem);left:50%;transform:translateX(-50%);
+  background:var(--white);border:1px solid var(--line-m);
+  padding:.4rem;min-width:220px;
+  display:none;z-index:200;box-shadow:var(--shadow);
+}
+.cal-dropdown.open{display:block}
+.cal-opt{
+  display:flex;align-items:center;gap:.7rem;
+  padding:.7rem 1rem;
+  color:var(--t-dark);font-size:.82rem;font-weight:400;
+  transition:background .2s;border:none;background:none;width:100%;text-align:left;
+  cursor:pointer;
+}
+.cal-opt:hover{background:var(--pale);color:var(--cobalt)}
+
+/* ══════════════════════════════════════════
+   EVENTOS
+══════════════════════════════════════════ */
+#eventos{background:var(--white)}
+.events-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
+.event-card{
+  background:var(--white);
+  border:1px solid var(--line-m);
+  border-top:3px solid var(--cobalt);
+  padding:2.4rem 2rem;
+}
+.event-icon-wrap{
+  width:52px;height:52px;
+  border:1px solid var(--line-m);
+  display:flex;align-items:center;justify-content:center;
+  margin:0 0 1.4rem;
+}
+.event-type{
+  font-family:var(--fn);font-size:.62rem;font-weight:600;
+  letter-spacing:.45em;text-transform:uppercase;color:var(--cobalt-l);margin-bottom:.6rem;
+}
+.event-name{
+  font-family:var(--fs);font-size:1.5rem;color:var(--indigo);
+  font-weight:400;margin-bottom:1.5rem;line-height:1.3;
+}
+.event-row{
+  display:flex;align-items:flex-start;gap:.55rem;
+  font-family:var(--fn);font-size:.82rem;color:var(--t-dark);
+  margin-bottom:.5rem;font-weight:300;
+}
+.event-row svg{opacity:.55;flex-shrink:0;margin-top:2px}
+.event-map-btn{
+  display:inline-flex;align-items:center;gap:.5rem;
+  margin-top:1.6rem;padding:.7rem 1.6rem;
+  background:var(--white);color:var(--cobalt);
+  border:1px solid var(--cobalt);
+  font-family:var(--fn);font-size:.72rem;font-weight:600;
+  letter-spacing:.15em;text-transform:uppercase;
+  transition:background .25s,color .25s;cursor:pointer;
+}
+.event-map-btn:hover{background:var(--cobalt);color:var(--white)}
+
+/* ══════════════════════════════════════════
+   VESTIMENTA
+══════════════════════════════════════════ */
+#vestimenta{background:var(--pale-l)}
+.dress-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:1.5rem;margin-top:1rem}
+.dress-card{
+  background:var(--white);border:1px solid var(--line-m);
+  padding:2rem 1.8rem;
+  min-width:200px;flex:1;max-width:260px;
+  text-align:center;
+  display:flex;flex-direction:column;align-items:center;gap:.6rem;
+  transition:border-color .25s;
+}
+.dress-card:hover{border-color:var(--cobalt)}
+.dress-icon{display:flex;align-items:center;justify-content:center;height:52px}
+.dress-label{font-family:var(--fs);font-size:1.25rem;color:var(--indigo);font-weight:400}
+.dress-desc{font-family:var(--fn);font-size:.82rem;color:var(--cobalt-l);line-height:1.6;font-weight:300}
+.palette{display:flex;gap:.4rem;margin-top:.5rem}
+.swatch{width:22px;height:22px;border:1px solid var(--line-m)}
+
+/* ══════════════════════════════════════════
+   ÁLBUM
+══════════════════════════════════════════ */
+#album{background:var(--white)}
+.album-wrap{display:flex;flex-direction:column;gap:2.5rem}
+.upload-zone{
+  border:1px dashed var(--cobalt-xl);padding:3rem 2rem;text-align:center;
+  background:var(--pale-l);transition:all .3s;cursor:pointer;
+}
+.upload-zone:hover,.upload-zone.drag{border-color:var(--cobalt);background:var(--pale)}
+.upload-zone p{font-family:var(--fs);font-size:1.2rem;color:var(--indigo);margin-bottom:.3rem;font-weight:400}
+.upload-zone span{font-family:var(--fn);font-size:.76rem;color:var(--cobalt-l);font-weight:300}
+.upload-zone input[type=file]{display:none}
+.up-btn{
+  display:inline-flex;align-items:center;gap:.5rem;margin-top:1.2rem;
+  padding:.7rem 1.8rem;background:var(--cobalt);color:var(--white);
+  border:none;font-size:.75rem;font-weight:600;
+  letter-spacing:.18em;text-transform:uppercase;transition:background .2s;cursor:pointer;
+}
+.up-btn:hover{background:var(--indigo)}
+.upload-list{display:flex;flex-direction:column;gap:.4rem}
+.up-item{
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  background:var(--pale-l);border:1px solid var(--line);padding:.6rem 1rem;
+}
+.up-name{flex:1;font-size:.78rem;color:var(--cobalt-l);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.up-status{font-family:var(--fn);font-size:.7rem;font-weight:600;white-space:nowrap}
+.up-status.loading{color:var(--cobalt-l)}
+.up-status.ok{color:#2e7d32}
+.up-status.err{color:#c62828}
+.gallery-header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+.gallery-reload{
+  display:inline-flex;align-items:center;gap:.4rem;
+  background:none;border:1px solid var(--line-m);padding:.4rem 1rem;
+  font-family:var(--fn);font-size:.68rem;font-weight:600;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--cobalt-l);transition:all .2s;cursor:pointer;
+}
+.gallery-reload:hover{border-color:var(--cobalt);color:var(--cobalt)}
+.drive-gallery-frame{width:100%;border:1px solid var(--line);background:var(--pale-l)}
+.drive-gallery-note{
+  font-family:var(--fn);font-size:.72rem;color:var(--cobalt-l);
+  font-weight:300;text-align:center;letter-spacing:.06em;
+}
+
+/* ══════════════════════════════════════════
+   ASISTENCIA
+══════════════════════════════════════════ */
+#asistencia{background:var(--pale-l)}
+.rsvp-form{max-width:520px;margin:0 auto;display:flex;flex-direction:column;gap:1.6rem}
+.form-group{display:flex;flex-direction:column;gap:.5rem;text-align:left}
+.form-label{
+  font-family:var(--fn);font-size:.62rem;font-weight:600;
+  letter-spacing:.35em;text-transform:uppercase;color:var(--cobalt-l);
+}
+.form-input,.form-textarea,.form-select{
+  background:transparent;
+  border:none;border-bottom:1px solid var(--line-m);
+  padding:.7rem 0;color:var(--indigo);
+  font-size:.92rem;font-weight:300;
+  transition:border-color .2s;outline:none;width:100%;
+}
+.form-input:focus,.form-textarea:focus,.form-select:focus{border-bottom-color:var(--cobalt)}
+.form-input::placeholder,.form-textarea::placeholder{color:var(--cobalt-p);font-style:italic}
+.form-select{appearance:none;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%235B8EE8' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 0 center}
+.form-select option{background:var(--white);color:var(--indigo)}
+.form-textarea{resize:vertical;min-height:100px;line-height:1.65}
+.attend-group{display:flex;gap:1rem}
+.attend-opt{flex:1}
+.attend-opt input{display:none}
+.attend-opt label{
+  display:flex;align-items:center;justify-content:center;gap:.5rem;
+  padding:.8rem;border:1px solid var(--line-m);
+  cursor:pointer;transition:all .22s;font-size:.84rem;font-weight:400;color:var(--cobalt-l);
+  background:var(--white);
+}
+.attend-opt input:checked + label{border-color:var(--cobalt);color:var(--cobalt);background:var(--pale)}
+.attend-opt label:hover{border-color:var(--cobalt-l)}
+.form-submit{
+  padding:1rem 2.5rem;background:var(--cobalt);color:var(--white);border:none;
+  font-size:.76rem;font-weight:600;
+  letter-spacing:.25em;text-transform:uppercase;
+  transition:background .25s;
+  align-self:center;position:relative;overflow:hidden;
+}
+.form-submit:hover{background:var(--indigo)}
+.form-submit.sent{background:#065f46}
+.form-submit::after{
+  content:'';position:absolute;top:0;left:-100%;width:60%;height:100%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.1),transparent);
+  animation:shimmer 2.5s infinite;
+}
+.form-msg{padding:1rem 1.2rem;font-size:.84rem;text-align:center;margin-top:.4rem;display:none;font-weight:400}
+.form-msg.ok{background:rgba(5,150,105,.08);border:1px solid rgba(52,211,153,.3);color:#065f46;display:block}
+.form-msg.err{background:rgba(185,28,28,.06);border:1px solid rgba(252,165,165,.25);color:#991b1b;display:block}
+
+/* ══════════════════════════════════════════
+   FOOTER
+══════════════════════════════════════════ */
+footer{
+  background:var(--indigo);
+  text-align:center;padding:5rem 2rem 2.5rem;
+  border-top:none;
+}
+.f-seal-wrap{width:80px;height:80px;margin:0 auto 2rem;opacity:.85}
+.f-names{font-family:var(--fc);font-size:clamp(2.5rem,6vw,4rem);color:var(--cobalt-p);margin-bottom:.3rem}
+.f-date{font-family:var(--fs);font-size:.95rem;letter-spacing:.38em;text-transform:uppercase;color:var(--cobalt-xl);margin-bottom:2rem;font-weight:300}
+.f-heart{color:var(--cobalt-xl);font-size:1rem;display:block;margin-bottom:.5rem;opacity:.7}
+.f-credit{font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(160,190,240,.35)}
+.f-border{
+  display:block;width:100%;margin-top:3rem;opacity:.5;
+}
+
+/* ══════════════════════════════════════════
+   REVEAL
+══════════════════════════════════════════ */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
+.reveal.visible{opacity:1;transform:none}
+
+/* ══════════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════════ */
+@media(max-width:640px){
+  section{padding:4.5rem 1.4rem}
+  .events-grid{grid-template-columns:1fr}
+  .cd-item{min-width:72px;padding:1.2rem .8rem}
+  .cd-num{font-size:2.2rem}
+  .attend-group{flex-direction:column}
+  #player .p-info{display:none}
+  .dress-card{max-width:100%}
+  .hero-photo-frame{width:100%}
+}
+</style>
+</head>
+<body>
+
+<!-- AUDIO -->
+<audio id="bg-audio" loop preload="auto">
+  <source src="audio/para-volverte-a-decir.mp3" type="audio/mpeg">
+</audio>
+
+<!-- ══════ OVERLAY ══════ -->
+<div id="overlay">
+  <div class="o-bg">
+    <img src="img/foto.jpg" alt="" onerror="this.style.display='none'">
+  </div>
+  <div class="o-veil"></div>
+
+  <div class="o-content">
+    <!-- Sello mini -->
+   
+
+    <span class="o-pre">Con amor · Una invitación especial</span>
+    <p class="o-names">Erica<span class="o-amp">&amp;</span>Emilio</p>
+    <p class="o-date">Viernes · 18 de Septiembre · 2026</p>
+    <div class="o-rule"></div>
+    <span class="o-cta">Toca para abrir</span>
+  </div>
+</div>
+
+<!-- ══════ REPRODUCTOR ══════ -->
+<div id="player">
+  <div class="vinyl" id="vinyl"></div>
+  <div class="p-info">
+    <span class="p-title">Para Volverte a Decir</span>
+    <span class="p-artist">Arco</span>
+  </div>
+  <div class="waves off" id="waves">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <button class="p-btn" id="p-btn" aria-label="Reproducir / Pausar">▶</button>
+</div>
+
+<!-- ══════ HERO ══════ -->
+<section id="hero">
+
+  <!-- Foto de fondo, banner completo -->
+  <div class="hero-bg">
+    <img src="img/foto.jpg" alt="Erica y Emilio" onerror="this.style.display='none'">
+  </div>
+  <div class="hero-veil"></div>
+
+  <!-- Texto superpuesto, anclado abajo -->
+  <div class="hero-content">
+    <span class="hero-tag">Con amor · Les invitamos a celebrar</span>
+    <h1 class="hero-nos">Nos Casamos</h1>
+    <h2 class="hero-names">Erica<span class="hero-amp">&amp;</span>Emilio</h2>
+    <p class="hero-date">Viernes · 18 de Septiembre · 2026</p>
+  </div>
+
+</section>
+
+<!-- ══════ CITA BÍBLICA ══════ -->
+<section id="biblia">
+  <div class="sec-inner sec-center reveal">
+    <div class="biblia-rule"><span>✦</span></div>
+    <p class="biblia-text">
+      "El amor es sufrido, es benigno; el amor no tiene envidia, el amor no es jactancioso, no se envanece... todo lo soporta, todo lo cree, todo lo espera, todo lo aguanta. El amor nunca deja de ser."
+    </p>
+    <span class="biblia-ref">— 1 Corintios 13 : 4 – 8</span>
+    <div class="biblia-rule" style="margin:0 auto"><span>✦</span></div>
+  </div>
+</section>
+
+<!-- ══════ CUENTA REGRESIVA ══════ -->
+<section id="countdown">
+  <div class="cd-inner reveal">
+    <span class="sec-tag">El gran día se acerca</span>
+    <h2 class="sec-title">Cuenta Regresiva</h2>
+    <p class="sec-sub" style="margin-bottom:0">Viernes · 18 de Septiembre · 2026 · 2:00 PM</p>
+
+    <div class="cd-grid" id="cd-grid">
+      <div class="cd-item"><span class="cd-num" id="cd-m">--</span><span class="cd-label">Meses</span></div>
+      <div class="cd-item"><span class="cd-num" id="cd-d">--</span><span class="cd-label">Días</span></div>
+      <div class="cd-item"><span class="cd-num" id="cd-h">--</span><span class="cd-label">Horas</span></div>
+      <div class="cd-item"><span class="cd-num" id="cd-min">--</span><span class="cd-label">Minutos</span></div>
+      <div class="cd-item"><span class="cd-num" id="cd-s">--</span><span class="cd-label">Segundos</span></div>
+    </div>
+    <p class="cd-done" id="cd-done">¡Hoy es el gran día! ♡</p>
+
+    <div class="cal-btn-wrap">
+      <button class="cal-main-btn" id="cal-toggle" aria-expanded="false">
+        <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="1"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Añadir a mi Calendario
+      </button>
+      <div class="cal-dropdown" id="cal-dropdown">
+        <button class="cal-opt" id="cal-google">
+          <svg width="15" height="15" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          Google Calendar
+        </button>
+        <button class="cal-opt" id="cal-apple">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.22.14-2.19 1.28-2.17 3.81.02 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.77M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          Apple Calendar (ICS)
+        </button>
+        <button class="cal-opt" id="cal-outlook">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="20" height="16" rx="1"/><polyline points="2,4 12,13 22,4"/></svg>
+          Outlook / ICS
+        </button>
+        <button class="cal-opt" id="cal-yahoo">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="#6001D2"><path d="M12.425 16.875l-3.075-7.05H6.15l4.5 9.15-2.475 5.025H11.4l7.425-14.175h-3.225z"/></svg>
+          Yahoo Calendar
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ EVENTOS ══════ -->
+<section id="eventos">
+  <div class="sec-inner">
+    <div class="sec-center reveal" style="margin-bottom:3.5rem">
+      <span class="sec-tag">Los esperamos</span>
+      <h2 class="sec-title">La Celebración</h2>
+      <div class="ornament"><span>✦</span></div>
+    </div>
+    <div class="events-grid">
+
+      <!-- CEREMONIA -->
+      <div class="event-card reveal">
+        <div class="event-icon-wrap">
+          <svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="var(--cobalt)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="1.5" x2="12" y2="5.5"/><line x1="9.8" y1="3.5" x2="14.2" y2="3.5"/>
+            <path d="M5 7h14v14H5z"/>
+            <path d="M9 21v-5a3 3 0 016 0v5"/>
+            <path d="M5 11 Q9 8.5 12 10.5 Q15 8.5 19 11"/>
+          </svg>
+        </div>
+        <p class="event-type">Ceremonia Religiosa</p>
+        <h3 class="event-name">Parroquia San Joaquín<br>y Santa Ana</h3>
+        <div class="event-row">
+          <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="var(--cobalt-l)" stroke-width="1.6"><rect x="3" y="4" width="18" height="18" rx="1"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/></svg>
+          Viernes, 18 de Septiembre 2026
+        </div>
+        <div class="event-row">
+          <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="var(--cobalt-l)" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 16,14"/></svg>
+          2:00 PM
+        </div>
+        <div class="event-row">
+          <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="var(--cobalt-l)" stroke-width="1.6"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          Rionegro, Antioquia
+        </div>
+        <a class="event-map-btn" href="https://maps.google.com/?q=Parroquia+San+Joaquin+y+Santa+Ana+Rionegro+Antioquia" target="_blank" rel="noopener">
+          <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          Abrir en Maps
+        </a>
+      </div>
+
+      <!-- RECEPCIÓN -->
+      <div class="event-card reveal">
+        <div class="event-icon-wrap">
+          <svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="var(--cobalt)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 3L5 10Q5 15 8 16v4H6"/>
+            <path d="M17 3L19 10Q19 15 16 16v4h2"/>
+            <line x1="6" y1="20" x2="10" y2="20"/><line x1="14" y1="20" x2="18" y2="20"/>
+            <line x1="8.5" y1="9.5" x2="15.5" y2="7.5"/>
+          </svg>
+        </div>
+        <p class="event-type">Recepción</p>
+        <h3 class="event-name">Club El Prado</h3>
+        <div class="event-row">
+          <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="var(--cobalt-l)" stroke-width="1.6"><rect x="3" y="4" width="18" height="18" rx="1"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/></svg>
+          Viernes, 18 de Septiembre 2026
+        </div>
+        <div class="event-row">
+          <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="var(--cobalt-l)" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 16,14"/></svg>
+          Por confirmar
+        </div>
+        <div class="event-row">
+          <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="var(--cobalt-l)" stroke-width="1.6"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          La Ceja, Antioquia
+        </div>
+        <a class="event-map-btn" href="https://maps.google.com/?q=Club+El+Prado+La+Ceja+Antioquia" target="_blank" rel="noopener">
+          <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          Abrir en Maps
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ VESTIMENTA ══════ -->
+<section id="vestimenta">
+  <div class="sec-inner sec-center reveal">
+    <span class="sec-tag">Dress Code</span>
+    <h2 class="sec-title">Código de Vestimenta</h2>
+    <p class="sec-sub">Elegancia formal · Tonos clásicos</p>
+    <div class="dress-grid">
+
+      <div class="dress-card">
+        <span class="dress-icon">
+          <svg width="40" height="40" fill="none" viewBox="0 0 24 24" stroke="var(--cobalt)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="5.5" r="2.6"/>
+            <path d="M9 8.5L5 22h14L15 8.5"/>
+            <path d="M10.5 9.5L12 13l1.5-3.5"/>
+            <line x1="12" y1="13" x2="12" y2="22"/>
+            <!-- Pocket square detail -->
+            <path d="M8.5 13.5 L8.5 11.5 L10 11.5" stroke-width=".9" opacity=".6"/>
+          </svg>
+        </span>
+        <span class="dress-label">Caballeros</span>
+        <p class="dress-desc">Traje formal o smoking.<br>Corbata o moño.</p>
+        <div class="palette">
+          <div class="swatch" style="background:#1a1a2e" title="Azul marino"></div>
+          <div class="swatch" style="background:#2d4a8a" title="Azul real"></div>
+          <div class="swatch" style="background:#1a1a1a" title="Negro"></div>
+          <div class="swatch" style="background:#555" title="Gris oscuro"></div>
+        </div>
+      </div>
+
+      <div class="dress-card">
+        <span class="dress-icon">
+          <svg width="40" height="40" fill="none" viewBox="0 0 24 24" stroke="var(--cobalt)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="4.8" r="2.4"/>
+            <path d="M9.5 7.5L7 22h10L14.5 7.5"/>
+            <path d="M9.5 8.5 Q12 11 14.5 8.5"/>
+          </svg>
+        </span>
+        <span class="dress-label">Damas</span>
+        <p class="dress-desc">Vestido de gala o cóctel.<br>Por favor evitar el blanco.</p>
+        <div class="palette">
+          <div class="swatch" style="background:#b8d4f0"></div>
+          <div class="swatch" style="background:#8ab4d8"></div>
+          <div class="swatch" style="background:#c9b1d9"></div>
+          <div class="swatch" style="background:#d4c5a9"></div>
+        </div>
+      </div>
+
+      <div class="dress-card">
+        <span class="dress-icon">
+          <svg width="40" height="40" fill="none" viewBox="0 0 24 24" stroke="var(--cobalt)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 17L7 7l4 5L12 5l1 7 4-5 3 10z"/>
+            <line x1="4" y1="17" x2="20" y2="17"/>
+            <line x1="4" y1="20" x2="20" y2="20"/>
+          </svg>
+        </span>
+        <span class="dress-label">Reservado</span>
+        <p class="dress-desc">Blanco, ivory y crema<br>son exclusivos de la novia.</p>
+        <div class="palette">
+          <div class="swatch" style="background:#fff;border-color:#ddd"></div>
+          <div class="swatch" style="background:#fffff0"></div>
+          <div class="swatch" style="background:#f5f0dc"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════ ÁLBUM ══════ -->
+<section id="album">
+  <div class="sec-inner">
+    <div class="sec-center reveal" style="margin-bottom:2.5rem">
+      <span class="sec-tag">Momentos compartidos</span>
+      <h2 class="sec-title">Álbum de la Boda</h2>
+      <p class="sec-sub">¡Sube tus fotos y comparte los recuerdos!</p>
+    </div>
+
+    <div class="album-wrap reveal">
+
+      <!-- Zona de subida -->
+      <div class="upload-zone" id="upload-zone">
+        <label for="photo-input" style="cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:.7rem">
+          <svg width="44" height="44" fill="none" viewBox="0 0 24 24" stroke="var(--cobalt-l)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+            <polyline points="17 8 12 3 7 8"/>
+            <line x1="12" y1="3" x2="12" y2="15"/>
+          </svg>
+          <p>Subir fotos</p>
+          <span>Arrastra aquí o toca para seleccionar · Varias fotos a la vez</span>
+          <button class="up-btn" type="button" onclick="document.getElementById('photo-input').click()">
+            Seleccionar fotos
+          </button>
+        </label>
+        <input type="file" id="photo-input" accept="image/*" multiple>
+      </div>
+
+      <!-- Lista de progreso -->
+      <div class="upload-list" id="upload-list"></div>
+
+      <!-- Galería embebida -->
+      <div class="gallery-header">
+        <span class="sec-tag" style="margin:0">Fotos subidas</span>
+        <button class="gallery-reload" id="gallery-reload">
+          <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg>
+          Actualizar galería
+        </button>
+      </div>
+      <iframe class="drive-gallery-frame" id="gallery-frame"
+        src="https://drive.google.com/embeddedfolderview?id=1qyMq5CFMIaYVprPWW3rd5Je8ZyGmoA__#grid"
+        height="480" frameborder="0" allowfullscreen loading="lazy"
+        title="Galería de la boda"></iframe>
+
+      <p class="drive-gallery-note">
+        Las fotos tardan unos segundos en aparecer · Haz clic en "Actualizar galería" para ver las nuevas
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ ASISTENCIA ══════ -->
+<section id="asistencia">
+  <div class="sec-inner sec-center">
+    <div class="reveal">
+      <span class="sec-tag">Cuéntanos</span>
+      <h2 class="sec-title">¿Vendrás a la Boda?</h2>
+      <p class="sec-sub">Confirma antes del 30 de Agosto de 2026</p>
+    </div>
+
+    <form class="rsvp-form" id="rsvp-form" novalidate>
+      <div class="form-group">
+        <span class="form-label">¿Confirmas tu asistencia?</span>
+        <div class="attend-group">
+          <div class="attend-opt">
+            <input type="radio" name="attend" id="att-yes" value="si" required>
+            <label for="att-yes">
+              <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5" stroke-linecap="round"/></svg>
+              Allá estaré
+            </label>
+          </div>
+          <div class="attend-opt">
+            <input type="radio" name="attend" id="att-no" value="no">
+            <label for="att-no">
+              <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2"><line x1="18" y1="6" x2="6" y2="18" stroke-linecap="round"/><line x1="6" y1="6" x2="18" y2="18" stroke-linecap="round"/></svg>
+              No podré asistir
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="rsvp-name">Tu nombre completo</label>
+        <input class="form-input" type="text" id="rsvp-name" placeholder="¿Cómo te llamas?" required autocomplete="name">
+      </div>
+
+      <div class="form-group" id="grp-count">
+        <label class="form-label" for="rsvp-count">¿Cuántas personas en tu grupo?</label>
+        <select class="form-select" id="rsvp-count">
+          <option value="1">Solo yo</option>
+          <option value="2">2 personas</option>
+          <option value="3">3 personas</option>
+          <option value="4">4 personas</option>
+          <option value="5">5 o más</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="rsvp-msg">Mensaje para los novios</label>
+        <textarea class="form-textarea" id="rsvp-msg" placeholder="Escríbeles algo especial..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="rsvp-song" style="display:flex;align-items:center;gap:.4rem">
+          <svg width="11" height="11" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+          Una canción que no puede faltar
+        </label>
+        <input class="form-input" type="text" id="rsvp-song" placeholder="Título · Artista">
+      </div>
+
+      <button type="submit" class="form-submit" id="rsvp-submit">Enviar mi respuesta</button>
+      <div class="form-msg" id="form-msg"></div>
+    </form>
+  </div>
+</section>
+
+<!-- ══════ FOOTER ══════ -->
+<footer>
+  <!-- Small seal -->
+  <div class="f-seal-wrap">
+    <svg viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg" fill="none" width="100%" height="100%">
+      <defs><path id="fc" d="M 28,110 A 82,82 0 1,1 192,110 A 82,82 0 1,1 28,110"/></defs>
+      <circle cx="110" cy="110" r="108" stroke="rgba(160,190,240,.2)" stroke-width=".7"/>
+      <ellipse cx="110" cy="7.5" rx="3" ry="5.5" fill="rgba(160,190,240,.5)" transform="rotate(0,110,110)"/>
+      <ellipse cx="110" cy="7.5" rx="3" ry="5.5" fill="rgba(160,190,240,.5)" transform="rotate(30,110,110)"/>
+      <ellipse cx="110" cy="7.5" rx="3" ry="5.5" fill="rgba(160,190,240,.5)" transform="rotate(60,110,110)"/>
+      <ellipse cx="110" cy="7.5" rx="3" ry="5.5" fill="rgba(160,190,240,.5)" transform="rotate(90,110,110)"/>
+      <ellipse cx="110" cy="7.5" rx="3" ry="5.5" fill="rgba(160,190,240,.5)" transform="rotate(120,110,110)"/>
+      <ellipse cx="110" cy="7.5" rx="3" ry="5.5" fill="rgba(160,190,240,.5)" transform="rotate(150,110,110)"/>
+      <ellipse cx="110" cy="7.5" rx="3" ry="5.5" fill="rgba(160,190,240,.5)" transform="rotate(180,110,110)"/>
+      <ellipse cx="110" cy="7.5" rx="3" ry="5.5" fill="rgba(160,190,240,.5)" transform="rotate(210,110,110)"/>
+      <ellipse cx="110" cy="7.5" rx="3" ry="5.5" fill="rgba(160,190,240,.5)" transform="rotate(240,110,110)"/>
+      <ellipse cx="110" cy="7.5" rx="3" ry="5.5" fill="rgba(160,190,240,.5)" transform="rotate(270,110,110)"/>
+      <ellipse cx="110" cy="7.5" rx="3" ry="5.5" fill="rgba(160,190,240,.5)" transform="rotate(300,110,110)"/>
+      <ellipse cx="110" cy="7.5" rx="3" ry="5.5" fill="rgba(160,190,240,.5)" transform="rotate(330,110,110)"/>
+      <circle cx="110" cy="110" r="86" stroke="rgba(160,190,240,.45)" stroke-width="1.2"/>
+      <circle cx="110" cy="110" r="82" stroke="rgba(160,190,240,.2)" stroke-width=".5"/>
+      <text font-size="7" font-family="Montserrat,sans-serif" font-weight="500" letter-spacing="3.2" fill="rgba(160,190,240,.55)">
+        <textPath href="#fc" startOffset="26%">ERICA · EMILIO · 18 · IX · MMXXVI ·</textPath>
+      </text>
+      <circle cx="110" cy="110" r="65" stroke="rgba(160,190,240,.25)" stroke-width=".7"/>
+      <path d="M110,43 L108.2,46.5 L110,50 L111.8,46.5 Z" fill="rgba(160,190,240,.5)"/>
+      <text x="63" y="127" font-size="56" font-family="Georgia,serif" font-style="italic" fill="rgba(160,190,240,.75)">E</text>
+      <text x="110" y="113" font-size="18" font-family="Georgia,serif" font-style="italic" fill="rgba(160,190,240,.45)" text-anchor="middle">&amp;</text>
+      <text x="124" y="127" font-size="56" font-family="Georgia,serif" font-style="italic" fill="rgba(160,190,240,.75)">E</text>
+      <path d="M68,135 Q110,128 152,135" stroke="rgba(160,190,240,.3)" stroke-width=".8"/>
+    </svg>
+  </div>
+
+  <p class="f-names">Erica &amp; Emilio</p>
+  <p class="f-date">18 · IX · MMXXVI</p>
+  <span class="f-heart">♡</span>
+  <p class="f-credit">Con amor · Para siempre</p>
+
+  <!-- Floral border -->
+  <svg class="f-border" height="32" viewBox="0 0 600 32" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <line x1="0" y1="16" x2="600" y2="16" stroke="rgba(160,190,240,.2)" stroke-width=".8"/>
+    <!-- Repeating motif: flower every 75px -->
+    <g transform="translate(37.5,16)">
+      <ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(0,0,0)"/>
+      <ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(60,0,0)"/>
+      <ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(120,0,0)"/>
+      <ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(180,0,0)"/>
+      <ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(240,0,0)"/>
+      <ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(300,0,0)"/>
+      <circle cx="0" cy="0" r="2.2" fill="rgba(160,190,240,.6)"/>
+    </g>
+    <g transform="translate(112.5,16)"><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(0,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(60,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(120,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(180,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(240,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(300,0,0)"/><circle cx="0" cy="0" r="2.2" fill="rgba(160,190,240,.6)"/></g>
+    <g transform="translate(187.5,16)"><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(0,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(60,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(120,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(180,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(240,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(300,0,0)"/><circle cx="0" cy="0" r="2.2" fill="rgba(160,190,240,.6)"/></g>
+    <g transform="translate(262.5,16)"><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(0,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(60,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(120,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(180,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(240,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(300,0,0)"/><circle cx="0" cy="0" r="2.2" fill="rgba(160,190,240,.6)"/></g>
+    <g transform="translate(337.5,16)"><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(0,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(60,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(120,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(180,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(240,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(300,0,0)"/><circle cx="0" cy="0" r="2.2" fill="rgba(160,190,240,.6)"/></g>
+    <g transform="translate(412.5,16)"><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(0,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(60,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(120,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(180,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(240,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(300,0,0)"/><circle cx="0" cy="0" r="2.2" fill="rgba(160,190,240,.6)"/></g>
+    <g transform="translate(487.5,16)"><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(0,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(60,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(120,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(180,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(240,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(300,0,0)"/><circle cx="0" cy="0" r="2.2" fill="rgba(160,190,240,.6)"/></g>
+    <g transform="translate(562.5,16)"><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(0,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(60,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(120,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(180,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(240,0,0)"/><ellipse cx="0" cy="-5" rx="2" ry="4" fill="rgba(160,190,240,.5)" transform="rotate(300,0,0)"/><circle cx="0" cy="0" r="2.2" fill="rgba(160,190,240,.6)"/></g>
+    <!-- Diamonds between flowers -->
+    <g transform="translate(75,16) rotate(45)"><rect x="-2" y="-2" width="4" height="4" fill="rgba(160,190,240,.3)"/></g>
+    <g transform="translate(150,16) rotate(45)"><rect x="-2" y="-2" width="4" height="4" fill="rgba(160,190,240,.3)"/></g>
+    <g transform="translate(225,16) rotate(45)"><rect x="-2" y="-2" width="4" height="4" fill="rgba(160,190,240,.3)"/></g>
+    <g transform="translate(300,16) rotate(45)"><rect x="-2" y="-2" width="4" height="4" fill="rgba(160,190,240,.3)"/></g>
+    <g transform="translate(375,16) rotate(45)"><rect x="-2" y="-2" width="4" height="4" fill="rgba(160,190,240,.3)"/></g>
+    <g transform="translate(450,16) rotate(45)"><rect x="-2" y="-2" width="4" height="4" fill="rgba(160,190,240,.3)"/></g>
+    <g transform="translate(525,16) rotate(45)"><rect x="-2" y="-2" width="4" height="4" fill="rgba(160,190,240,.3)"/></g>
+  </svg>
+</footer>
+
+<!-- ══════════════════════════════════════════
+     JAVASCRIPT
+══════════════════════════════════════════ -->
+<script>
+
+/* ─── APPS SCRIPT URL ────────────────────────────────────────
+   Pega aquí la URL que obtienes al desplegar el Apps Script
+   como "Web App" (ver instrucciones al final del HTML).
+   ─────────────────────────────────────────────────────────── */
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwp4U3JBMKChABnPw3nzH6dmlsvoFk3J2dYCdzu66TscNy4CVOpfLWcrtI3XJG5fK0xlw/exec';
+
+/* ── 1. OVERLAY + AUDIO ──────────────────────────────── */
+const overlay = document.getElementById('overlay');
+const audio   = document.getElementById('bg-audio');
+const pBtn    = document.getElementById('p-btn');
+const vinyl   = document.getElementById('vinyl');
+const waves   = document.getElementById('waves');
+let playing   = false;
+
+function tryPlay() {
+  audio.volume = 0.65;
+  audio.play().then(() => {
+    playing = true;
+    pBtn.textContent = '⏸';
+    vinyl.classList.add('on');
+    waves.classList.remove('off');
+  }).catch(() => {
+    pBtn.textContent = '▶';
+    waves.classList.add('off');
+  });
+}
+
+['click','touchend'].forEach(ev => {
+  overlay.addEventListener(ev, e => {
+    e.preventDefault();
+    overlay.classList.add('out');
+    tryPlay();
+  }, {once: true});
+});
+
+pBtn.addEventListener('click', () => {
+  if (playing) {
+    audio.pause();
+    playing = false;
+    pBtn.textContent = '▶';
+    vinyl.classList.remove('on');
+    waves.classList.add('off');
+  } else { tryPlay(); }
+});
+
+/* ── 2. CUENTA REGRESIVA ──────────────────────────────── */
+const WEDDING = new Date('2026-09-18T14:00:00');
+const pad = n => String(n).padStart(2,'0');
+
+function tick() {
+  const now  = new Date();
+  const diff = WEDDING - now;
+  if (diff <= 0) {
+    document.getElementById('cd-grid').style.display = 'none';
+    document.getElementById('cd-done').style.display = 'block';
+    return;
+  }
+  let months = (WEDDING.getFullYear() - now.getFullYear()) * 12
+             + (WEDDING.getMonth() - now.getMonth());
+  if (now.getDate() > WEDDING.getDate()) months--;
+  months = Math.max(0, months);
+  const base = new Date(now.getFullYear(), now.getMonth() + months,
+                        now.getDate(), now.getHours(), now.getMinutes(), now.getSeconds());
+  const rem  = WEDDING - base;
+  document.getElementById('cd-m').textContent   = pad(months);
+  document.getElementById('cd-d').textContent   = pad(Math.floor(rem / 86400000));
+  document.getElementById('cd-h').textContent   = pad(Math.floor(rem % 86400000 / 3600000));
+  document.getElementById('cd-min').textContent = pad(Math.floor(rem % 3600000 / 60000));
+  document.getElementById('cd-s').textContent   = pad(Math.floor(rem % 60000 / 1000));
+}
+tick(); setInterval(tick, 1000);
+
+/* ── 3. CALENDARIO ───────────────────────────────────── */
+const EVT = {
+  title:    'Matrimonio Erica & Emilio',
+  location: 'Parroquia San Joaquin y Santa Ana, Rionegro, Antioquia',
+  desc:     'Ceremonia: 2:00 PM - Parroquia San Joaquin y Santa Ana, Rionegro\\nRecepcion: Club El Prado, La Ceja',
+  start:    '20260918T140000',
+  end:      '20260918T230000',
+};
+function ics() {
+  return ['BEGIN:VCALENDAR','VERSION:2.0','CALSCALE:GREGORIAN','METHOD:PUBLISH',
+    'BEGIN:VEVENT',`DTSTART:${EVT.start}`,`DTEND:${EVT.end}`,
+    `SUMMARY:${EVT.title}`,`LOCATION:${EVT.location}`,`DESCRIPTION:${EVT.desc}`,
+    'BEGIN:VALARM','TRIGGER:-P1D','ACTION:DISPLAY','DESCRIPTION:Recordatorio: mañana es la boda!','END:VALARM',
+    'BEGIN:VALARM','TRIGGER:-PT2H','ACTION:DISPLAY','DESCRIPTION:La boda comienza en 2 horas!','END:VALARM',
+    'END:VEVENT','END:VCALENDAR'].join('\r\n');
+}
+function dlICS() {
+  const a = Object.assign(document.createElement('a'),{
+    href: URL.createObjectURL(new Blob([ics()],{type:'text/calendar'})),
+    download:'matrimonio.ics'
+  });
+  a.click(); setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+}
+
+const calToggle = document.getElementById('cal-toggle');
+const calDD     = document.getElementById('cal-dropdown');
+calToggle.addEventListener('click', () => {
+  const o = calDD.classList.toggle('open');
+  calToggle.setAttribute('aria-expanded', o);
+});
+document.addEventListener('click', e => { if(!e.target.closest('.cal-btn-wrap')) calDD.classList.remove('open'); });
+
+document.getElementById('cal-google').addEventListener('click', () => {
+  window.open('https://calendar.google.com/calendar/r/eventedit?'+new URLSearchParams({
+    text:EVT.title, dates:`${EVT.start}/${EVT.end}`,
+    location:EVT.location, details:EVT.desc.replace('\\n','\n')
+  }),'_blank');
+  calDD.classList.remove('open');
+});
+document.getElementById('cal-apple').addEventListener('click',   () => { dlICS(); calDD.classList.remove('open'); });
+document.getElementById('cal-outlook').addEventListener('click', () => { dlICS(); calDD.classList.remove('open'); });
+document.getElementById('cal-yahoo').addEventListener('click', () => {
+  window.open('https://calendar.yahoo.com/?'+new URLSearchParams({
+    v:'60',title:EVT.title,st:EVT.start,et:EVT.end,
+    in_loc:EVT.location,desc:EVT.desc.replace('\\n','\n')
+  }),'_blank');
+  calDD.classList.remove('open');
+});
+
+/* ── 4. ÁLBUM ────────────────────────────────────────── */
+const photoInput  = document.getElementById('photo-input');
+const uploadZone  = document.getElementById('upload-zone');
+const uploadList  = document.getElementById('upload-list');
+const galleryFrame = document.getElementById('gallery-frame');
+
+uploadZone.addEventListener('dragover',  e => { e.preventDefault(); uploadZone.classList.add('drag'); });
+uploadZone.addEventListener('dragleave', () => uploadZone.classList.remove('drag'));
+uploadZone.addEventListener('drop', e => {
+  e.preventDefault(); uploadZone.classList.remove('drag');
+  processFiles([...e.dataTransfer.files].filter(f => f.type.startsWith('image/')));
+});
+photoInput.addEventListener('change', () => { processFiles([...photoInput.files]); photoInput.value = ''; });
+
+document.getElementById('gallery-reload').addEventListener('click', () => {
+  const src = galleryFrame.src; galleryFrame.src = ''; galleryFrame.src = src;
+});
+
+async function processFiles(files) {
+  for (const file of files) {
+    const item = addItem(file.name);
+    try {
+      const b64 = await toBase64(file);
+      const res = await fetch(APPS_SCRIPT_URL, {
+        method: 'POST',
+        body: JSON.stringify({ type: 'photo', filename: file.name.replace(/\.[^.]+$/, '.jpg'), mimeType: 'image/jpeg', data: b64 })
+      });
+      const json = await res.json().catch(() => ({}));
+      if (json.ok === false) throw new Error(json.error || 'Error desconocido');
+      setStatus(item, 'ok', '✓ Subida');
+    } catch(err) {
+      setStatus(item, 'err', 'Error: ' + err.message);
+      console.error(err);
+    }
+  }
+}
+
+function toBase64(file) {
+  return new Promise((res, rej) => {
+    const img = new Image();
+    const url = URL.createObjectURL(file);
+    img.onload = () => {
+      const MAX = 1600;
+      let w = img.width, h = img.height;
+      if (w > MAX || h > MAX) {
+        if (w > h) { h = Math.round(h * MAX / w); w = MAX; }
+        else       { w = Math.round(w * MAX / h); h = MAX; }
+      }
+      const canvas = document.createElement('canvas');
+      canvas.width = w; canvas.height = h;
+      canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+      URL.revokeObjectURL(url);
+      res(canvas.toDataURL('image/jpeg', 0.82).split(',')[1]);
+    };
+    img.onerror = rej;
+    img.src = url;
+  });
+}
+
+function addItem(name) {
+  const div = document.createElement('div');
+  div.className = 'up-item';
+  div.innerHTML = `<span class="up-name">${name}</span><span class="up-status loading">Subiendo…</span>`;
+  uploadList.appendChild(div);
+  uploadList.scrollIntoView({behavior:'smooth', block:'nearest'});
+  return div;
+}
+
+function setStatus(item, type, text) {
+  const s = item.querySelector('.up-status');
+  s.textContent = text;
+  s.className   = 'up-status ' + type;
+}
+
+/* ── 5. RSVP ─────────────────────────────────────────── */
+const form    = document.getElementById('rsvp-form');
+const formMsg = document.getElementById('form-msg');
+const submit  = document.getElementById('rsvp-submit');
+
+form.addEventListener('submit', async e => {
+  e.preventDefault();
+  const attend = form.querySelector('input[name=attend]:checked')?.value;
+  const name   = document.getElementById('rsvp-name').value.trim();
+  if (!attend) { showMsg('Selecciona si asistirás.','err'); return; }
+  if (!name)   { showMsg('Por favor escribe tu nombre.','err'); return; }
+  submit.disabled = true;
+  submit.textContent = 'Enviando...';
+  try {
+    const data = {
+      attend, name,
+      count: document.getElementById('rsvp-count').value,
+      msg:   document.getElementById('rsvp-msg').value.trim(),
+      song:  document.getElementById('rsvp-song').value.trim()
+    };
+    if (APPS_SCRIPT_URL !== 'PEGAR_URL_AQUI') {
+      await fetch(APPS_SCRIPT_URL, {
+        method: 'POST',
+        body: JSON.stringify(data)
+      });
+    } else {
+      console.log('RSVP (sin URL configurada):', data);
+    }
+    submit.classList.add('sent');
+    submit.textContent = '¡Enviado! ♡';
+    showMsg(attend === 'si'
+      ? `¡Gracias ${name}! Te esperamos con alegría.`
+      : `Gracias ${name} por avisarnos. ¡Los extrañaremos!`, 'ok');
+    form.reset();
+  } catch(err) {
+    console.error(err);
+    submit.disabled = false;
+    submit.textContent = 'Enviar mi respuesta';
+    showMsg('Hubo un error. Intenta de nuevo.','err');
+  }
+});
+
+function showMsg(text, type) {
+  formMsg.textContent = text;
+  formMsg.className   = 'form-msg ' + type;
+}
+
+/* ── 6. REVEAL ANIMATION ──────────────────────────────── */
+const io = new IntersectionObserver(entries => {
+  entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('visible'); io.unobserve(en.target); } });
+}, {threshold:.15});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+</script>
+</body>
+</html>
