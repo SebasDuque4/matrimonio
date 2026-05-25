@@ -552,7 +552,28 @@ footer > *{position:relative;z-index:1}
 }
 /* Cervezas: ilustración lateral álbum */
 .sec-flower-cerv{height:100%;opacity:.58}
-@media(max-width:900px){.sec-flower{display:none}}
+@media(max-width:900px){
+  /* Flores visibles en móvil: más pequeñas, ancladas al centro vertical */
+  .sec-flower{
+    height:auto;
+    width:clamp(42px,12vw,62px);
+    top:50%;
+    transform:translateY(-50%);
+    opacity:.38;
+  }
+  .sec-flower-l{left:-18px}
+  .sec-flower-r{right:-18px;transform:translateY(-50%) scaleX(-1)}
+  .sec-flower-lm{left:-22px;width:clamp(50px,14vw,72px)}
+  .sec-flower-rm{right:-22px;width:clamp(50px,14vw,72px);transform:translateY(-50%) scaleX(-1)}
+  .sec-flower-cerv{width:clamp(48px,13vw,66px);opacity:.45;transform:translateY(-50%)}
+  .sec-flower-cerv.sec-flower-r{transform:translateY(-50%) scaleX(-1)}
+  .sec-flower-ev-r{
+    width:clamp(70px,20vw,115px);height:auto;
+    right:-22px;top:50%;
+    transform:translateY(-50%) rotate(-7deg);
+    opacity:.28;
+  }
+}
 
 /* ══════════════════════════════════════════
    REVEAL
@@ -572,6 +593,13 @@ footer > *{position:relative;z-index:1}
   #player .p-info{display:none}
   .dress-card{max-width:100%}
   .hero-photo-frame{width:100%}
+  /* Flores aún más discretas en pantallas muy pequeñas */
+  .sec-flower{width:clamp(34px,10vw,48px);opacity:.3;left:-14px}
+  .sec-flower-r{right:-14px;transform:translateY(-50%) scaleX(-1)}
+  .sec-flower-lm{left:-16px;width:clamp(40px,11vw,56px)}
+  .sec-flower-rm{right:-16px;width:clamp(40px,11vw,56px);transform:translateY(-50%) scaleX(-1)}
+  .sec-flower-cerv{width:clamp(38px,10vw,52px);opacity:.38}
+  .sec-flower-ev-r{width:clamp(55px,16vw,85px);right:-18px;opacity:.24}
 }
 </style>
 </head>
