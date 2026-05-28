@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command \"\\(Get-Content 'c:\\\\Users\\\\AMD\\\\OneDrive\\\\Escritorio\\\\MATRIMONIO\\\\web\\\\matrimonio\\\\img\\\\FLOR LARGA LATERAL.svg'\\) -replace 'fill:#a3d2e5', 'fill:#B2C1AA' | Set-Content 'c:\\\\Users\\\\AMD\\\\OneDrive\\\\Escritorio\\\\MATRIMONIO\\\\web\\\\matrimonio\\\\img\\\\FLOR LARGA LATERAL.svg' -Encoding UTF8\")",
+      "Bash(powershell -Command \"\\(Get-Content 'c:\\\\Users\\\\AMD\\\\OneDrive\\\\Escritorio\\\\MATRIMONIO\\\\web\\\\matrimonio\\\\img\\\\FLOR CORTA PRINCIPAL.svg'\\) -replace 'fill:#a3d2e5', 'fill:#96ADBB' | Set-Content 'c:\\\\Users\\\\AMD\\\\OneDrive\\\\Escritorio\\\\MATRIMONIO\\\\web\\\\matrimonio\\\\img\\\\FLOR CORTA PRINCIPAL.svg' -Encoding UTF8\")",
+      "Bash(powershell -Command \"\\(Get-Content 'c:\\\\Users\\\\AMD\\\\OneDrive\\\\Escritorio\\\\MATRIMONIO\\\\web\\\\matrimonio\\\\img\\\\FOOTER.svg'\\) -replace 'fill:#a3d2e5', 'fill:#96ADBB' | Set-Content 'c:\\\\Users\\\\AMD\\\\OneDrive\\\\Escritorio\\\\MATRIMONIO\\\\web\\\\matrimonio\\\\img\\\\FOOTER.svg' -Encoding UTF8\")"
+    ]
+  }
+}

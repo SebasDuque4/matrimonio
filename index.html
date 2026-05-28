@@ -6,49 +6,53 @@
 <title>Erica & Emilio · 18 · IX · MMXXVI</title>
 <meta name="description" content="Invitación de Matrimonio · Erica Zuluaga & Emilio García · 18 de Septiembre 2026">
 
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='47' fill='%231B3A8C'/%3E%3Ctext x='50' y='64' font-size='38' text-anchor='middle' fill='white' font-family='Georgia%2Cserif' font-style='italic'%3E%26%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='47' fill='%2300375E'/%3E%3Ctext x='50' y='62' font-size='28' text-anchor='middle' fill='white' font-family='Georgia%2Cserif' letter-spacing='2'%3EE%26E%3C/text%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cinzel+Decorative:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 /* ══════════════════════════════════════════
    VARIABLES
 ══════════════════════════════════════════ */
 :root{
-  /* ── Paleta nueva ── */
-  --blue:    #a3d2e5;
-  --blue-d:  #5ba3bf;
-  --blue-m:  #7ebfd6;
-  --blue-l:  #c8e8f2;
-  --blue-xl: #e4f3f8;
+  /* ── Paleta E&E ── */
+  --navy:    #00375E;
+  --sage:    #B2C1AA;
+  --steel:   #96ADBB;
+  --blush:   #F5EFEF;
   --cream:   #FDFAF5;
-  --cream-d: #F4EEE4;
-  --text:    #3B3530;
-  --text-m:  #6B6058;
-  --text-l:  #7ebfd6;
+  --cream-d: #EDE8E8;
+  --text:    #1E3040;
+  --text-m:  #4A6070;
+  --text-l:  #96ADBB;
   --white:   #FFFFFF;
-  --line:    rgba(163,210,229,.22);
-  --line-m:  rgba(163,210,229,.5);
-  --line-s:  rgba(163,210,229,.1);
-  --fs: 'Cormorant Garamond', Georgia, serif;
-  --fc: 'Great Vibes', cursive;
+  --line:    rgba(150,173,187,.18);
+  --line-m:  rgba(150,173,187,.38);
+  --line-s:  rgba(150,173,187,.09);
+  --fs: 'Cinzel', Georgia, serif;
+  --fc: 'Cinzel Decorative', 'Cinzel', serif;
   --fn: 'Montserrat', sans-serif;
-  --shadow-sm: 0 1px 12px rgba(91,163,191,.07);
-  --shadow:    0 2px 24px rgba(91,163,191,.10);
-  /* ── Alias (compatibilidad con HTML) ── */
-  --cobalt:   #5ba3bf;
-  --indigo:   #3B3530;
-  --cobalt-m: #4d8fa6;
-  --cobalt-l: #7ebfd6;
-  --cobalt-xl:#a3d2e5;
-  --cobalt-p: #c8e8f2;
-  --pale:     #F4EEE4;
-  --pale-l:   #FDFAF5;
-  --t-dark:   #3B3530;
-  --t-mid:    #5ba3bf;
-  --t-soft:   #7ebfd6;
+  --shadow-sm: 0 1px 12px rgba(0,55,94,.06);
+  --shadow:    0 2px 24px rgba(0,55,94,.09);
+  /* ── Alias para compatibilidad ── */
+  --cobalt:    #00375E;
+  --cobalt-m:  #2A5E82;
+  --cobalt-l:  #96ADBB;
+  --cobalt-xl: #B2C1AA;
+  --cobalt-p:  #D4E0D8;
+  --indigo:    #1E3040;
+  --pale:      #EDE8E8;
+  --pale-l:    #F5EFEF;
+  --t-dark:    #1E3040;
+  --t-mid:     #4A6070;
+  --t-soft:    #96ADBB;
+  --blue:      #96ADBB;
+  --blue-d:    #00375E;
+  --blue-m:    #6B8D9E;
+  --blue-l:    #C5D2CC;
+  --blue-xl:   #DCE8E4;
 }
 
 /* ══════════════════════════════════════════
@@ -533,7 +537,7 @@ footer > *{position:relative;z-index:1}
 /* ══════════════════════════════════════════
    FLORES DE SECCIÓN
 ══════════════════════════════════════════ */
-#biblia,#eventos,#vestimenta,#asistencia,#album{overflow:hidden}
+#biblia,#eventos,#itinerario,#vestimenta,#asistencia,#album{overflow:hidden}
 .sec-flower{
   position:absolute;top:0;height:100%;width:auto;
   pointer-events:none;z-index:0;opacity:.6;
@@ -601,7 +605,6 @@ footer > *{position:relative;z-index:1}
   #player .p-info{display:none}
   .dress-card{max-width:100%}
   .hero-photo-frame{width:100%}
-  /* Flores en pantallas muy pequeñas: mismo alto, un poco más escondidas */
   .sec-flower{opacity:.36}
   .sec-flower-l{left:-68px}
   .sec-flower-r{right:-68px}
@@ -612,7 +615,137 @@ footer > *{position:relative;z-index:1}
   .sec-flower-cerv.sec-flower-r{right:-62px}
   .sec-flower-ev-l{height:22%;left:-75px;opacity:.15}
   .sec-flower-ev-r{right:-105px;opacity:.15}
+  .tl-item{grid-template-columns:64px 1fr}
+  .tl-time{font-size:.55rem}
+  .dress-note{padding:1rem 1.4rem}
+  .dress-phrase{font-size:clamp(1.6rem,5vw,2.2rem)}
 }
+
+/* ══════════════════════════════════════════
+   MONOGRAMA E&E
+══════════════════════════════════════════ */
+.ee-mono{
+  display:flex;align-items:center;justify-content:center;gap:.18em;
+  margin:0 auto 2rem;animation:float 5s ease-in-out infinite;
+  line-height:1;
+}
+.ee-mono .ee-l{
+  font-family:'Cinzel Decorative','Cinzel',serif;
+  font-size:clamp(2.4rem,6vw,4rem);
+  font-weight:700;line-height:1;
+}
+.ee-mono .ee-a{
+  font-family:'Cinzel',serif;
+  font-size:clamp(.9rem,2.2vw,1.5rem);
+  font-weight:400;padding:0 .08em;
+  opacity:.8;letter-spacing:.05em;
+}
+/* overlay variant */
+.o-mono .ee-l{color:var(--navy);opacity:.72}
+.o-mono .ee-a{color:var(--steel)}
+/* hero variant */
+.hero-mono .ee-l{color:var(--cream);opacity:.6}
+.hero-mono .ee-a{color:rgba(245,239,239,.55)}
+/* footer seal */
+.f-seal-ee{
+  width:80px;height:80px;border-radius:50%;
+  border:1px solid var(--steel);
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 2rem;opacity:.72;
+}
+.f-seal-ee span{
+  font-family:'Cinzel',serif;font-size:1rem;
+  color:var(--navy);letter-spacing:.22em;font-weight:600;
+}
+
+/* ══════════════════════════════════════════
+   ITINERARIO
+══════════════════════════════════════════ */
+#itinerario{background:var(--white)}
+#itinerario,#vestimenta{overflow:hidden}
+.timeline{
+  max-width:680px;margin:0 auto;
+  display:flex;flex-direction:column;
+  gap:0;position:relative;
+}
+.timeline::before{
+  content:'';position:absolute;
+  left:50%;top:0;bottom:0;width:1px;
+  background:var(--line-m);transform:translateX(-50%);
+}
+.tl-item{
+  display:grid;grid-template-columns:1fr 52px 1fr;
+  align-items:center;gap:0;
+  padding:1.6rem 0;
+}
+.tl-item:nth-child(odd) .tl-left{text-align:right;padding-right:1.8rem}
+.tl-item:nth-child(odd) .tl-right{display:none}
+.tl-item:nth-child(even) .tl-left{display:none}
+.tl-item:nth-child(even) .tl-right{text-align:left;padding-left:1.8rem}
+.tl-node{
+  width:52px;height:52px;
+  background:var(--white);border:1px solid var(--line-m);
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;z-index:1;
+  flex-shrink:0;justify-self:center;
+  transition:border-color .25s;
+}
+.tl-item:hover .tl-node{border-color:var(--navy)}
+.tl-time{
+  font-family:var(--fn);font-size:.6rem;font-weight:600;
+  letter-spacing:.35em;text-transform:uppercase;
+  color:var(--steel);display:block;margin-bottom:.35rem;
+}
+.tl-title{
+  font-family:var(--fs);font-size:1.15rem;
+  color:var(--navy);font-weight:500;margin-bottom:.2rem;
+  line-height:1.2;
+}
+.tl-desc{
+  font-family:var(--fn);font-size:.76rem;
+  color:var(--text-m);font-weight:300;line-height:1.5;
+}
+@media(max-width:640px){
+  .timeline::before{left:26px}
+  .tl-item{grid-template-columns:52px 1fr}
+  .tl-item:nth-child(odd) .tl-left,
+  .tl-item:nth-child(even) .tl-left{display:none}
+  .tl-item:nth-child(odd) .tl-right,
+  .tl-item:nth-child(even) .tl-right{
+    display:block;text-align:left;padding-left:1.4rem;padding-right:0
+  }
+  .tl-node{justify-self:start}
+}
+
+/* ══════════════════════════════════════════
+   VESTIMENTA REDISEÑO
+══════════════════════════════════════════ */
+.dress-phrase{
+  font-family:var(--fs);font-size:clamp(1.9rem,4.5vw,3rem);
+  color:var(--navy);font-weight:500;line-height:1.2;
+  margin-bottom:.6rem;
+}
+.dress-notes-wrap{
+  display:flex;flex-wrap:wrap;gap:1rem;
+  justify-content:center;margin-top:2.5rem;
+}
+.dress-note{
+  display:flex;align-items:flex-start;gap:.8rem;
+  background:var(--white);border:1px solid var(--line-m);
+  border-left:3px solid var(--sage);
+  padding:1.1rem 1.6rem;
+  text-align:left;flex:1;min-width:240px;max-width:380px;
+}
+.dress-note.reserved{border-left-color:var(--navy)}
+.dress-note-icon{flex-shrink:0;margin-top:2px;opacity:.7}
+.dress-note p{
+  font-family:var(--fn);font-size:.84rem;
+  color:var(--text-m);font-weight:300;line-height:1.65;
+}
+.dress-note strong{font-weight:600;color:var(--navy)}
+.reserved-swatches{display:flex;gap:.35rem;margin-top:.5rem}
+.rswatch{width:20px;height:20px;border:1px solid rgba(0,0,0,.1)}
 </style>
 </head>
 <body>
@@ -631,11 +764,11 @@ footer > *{position:relative;z-index:1}
   <div class="o-veil"></div>
 
   <div class="o-content">
-    <svg class="o-logo" viewBox="0 0 1080 849.96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <path d="M1008.736,812.456c-5.13-8.364-10.232-15.708-14.337-23.572-9.7-18.581-10.507-39.029-11.764-59.389-1.835-29.712-5.767-58.99-16.6-87.089-14.047-36.44-40.4-59.028-76.962-70.754-6.357-2.038-12.664-4.234-19.626-6.569,1.218-1.385,1.754-2.551,2.331-2.572,40.044-1.437,77.437,4.969,109.931,31.5,31.8,25.959,46.552,60.152,52.865,99.113,5,30.885,8.434,62.053,14.385,92.742,2.258,11.642,9.539,22.33,14.693,33.377,1.434,3.076,3.45,5.88,6.313,10.675-11.921,1.4-22.024,3.46-32.156,3.617-32,.5-64.12,1.858-96-.161-25.61-1.622-51.125-6.766-76.356-11.941-61.141-12.54-113.6-42.542-158.755-84.683-50.276-46.915-83.075-104.494-101.44-171.063-13.017-47.182-16.173-94.929-13.079-143.023,4.63-71.98,23.409-140.323,58.185-204.054,22.956-42.069,50.363-80.421,85.674-113.124A325.34,325.34,0,0,1,877.218,28.141c61.641-16.1,124.171-14.378,186.871-10.724a18.815,18.815,0,0,1,4.678,1.079c.484.159.759.95,1.253,1.617-35.26,20.908-40.188,57.265-47.185,92.614-9.324,47.1-10.22,95.715-25.55,141.752-16.622,49.914-50.838,81.348-100.806,96.142a46.533,46.533,0,0,1-19.775,1.158c8.772-5.466,18.6-9.774,26.122-16.613,24.419-22.192,36.61-51.562,42.607-83.02,7.907-41.475,13.542-83.381,20.307-125.077,5.28-32.548,12.859-64.143,38.66-87.688.592-.54.647-1.671,1.792-4.879-20.749,2.016-40.273,3.519-59.691,5.894-27.584,3.374-54.789,8.494-80.789,18.946-71.352,28.684-123.633,78.539-161.8,144.424-23.173,40-39.737,82.794-50.918,127.315C645.4,361.3,642.247,392.64,637.242,423.5c-.5,3.091-.067,6.333-.067,10.843,10.96,0,21.188.006,31.417,0,57.289-.039,114.578.063,171.866-.283,8.247-.05,11.357,1.861,11.262,10.76-.092,8.665-2.915,11.1-11.266,11.038-63.393-.488-126.79-.564-190.184-.874-13.093-.064-13.341-.262-13.08,12.41,1.729,83.81,24.952,160.706,76.989,227.13C758.108,750.6,815.7,786.486,885.3,802.722c38.338,8.944,77.347,10.632,116.485,10.965C1003.854,813.7,1005.936,812.972,1008.736,812.456Z"/>
-      <path d="M11.4,20.9c7.114-1.528,11.463-3.1,15.875-3.309,37.79-1.768,75.446-2.22,113.314,1.441,45.836,4.432,88.525,18,128.628,39.39,42.368,22.6,78.2,53.6,108.417,91.124,30.869,38.333,55.7,80.1,73.41,126.016,26.624,69.028,38.824,140.343,34.842,214.474a367.105,367.105,0,0,1-27.322,120.174c-31.463,76.888-84.993,134.185-156.976,174.934-30.006,16.986-61.877,28.83-95.159,37.43-56.847,14.689-114.46,14.192-172.341,9.518-7.575-.611-15.165-1.03-24.112-1.63,5.465-10.758,10.629-19.949,14.907-29.535,10.717-24.022,12.864-49.84,15-75.61,2.08-25.138,4.534-50.266,14.571-73.746,18.677-43.693,50.354-73.649,96.876-84.793,18.948-4.539,39.2-3.62,58.863-5.185l.543,4.057q-9.494,2.719-18.989,5.437c-48.378,13.744-78.321,45.525-88.584,94.328-5.089,24.2-6.359,49.205-9.223,73.861-3.009,25.911-4.559,52.246-25.519,74.29,9.872,0,17.141.063,24.409-.01,72.819-.73,142.171-14.774,203-57.1,58.764-40.888,100.349-95.507,123.522-163.532a433.062,433.062,0,0,0,23.107-125.309c.464-13.478.021-13.124-13.406-13q-91.246.823-182.5,1.25c-1.932.012-3.883-.577-5.8-.45-8.856.587-12.926-2.7-12.338-12.292.625-10.177,7.468-8.874,13.825-8.876q89.83-.027,179.662.049c3.56,0,7.133-.3,10.679-.092,6.217.36,8.923-2.025,8.127-8.527-2.514-20.531-3.4-41.369-7.445-61.583-10.3-51.5-26.341-101.324-51.542-147.58-32.3-59.287-77.28-106.442-137.4-138.406-38.988-20.729-80.66-32.5-124.28-37.84-15.22-1.865-30.509-3.164-46.811-4.829.969,2.139,1.186,3.519,1.991,4.262C101.471,63.9,108.3,96.75,114.243,129.56c7.358,40.606,12.794,81.56,20.114,122.174,4.15,23.021,13.334,44.541,25.768,64.415,9.383,15,22.364,25.738,39.847,30.419a14.275,14.275,0,0,1,6.177,3.887c-19.924,3.053-37.966-2.54-54.991-11.947-43.147-23.842-67.221-61.776-76.7-108.907-6.415-31.888-9.345-64.46-14.875-96.547C55.755,110.862,51.3,88.638,44.958,67.067,40.393,51.544,30.712,38.179,17.669,27.809,15.861,26.372,14.509,24.361,11.4,20.9Z"/>
-      <path d="M578.719,353.967c-1.489,18.048-3.277,39.723-13.939,66.336-8.523,21.273-12.21,30.84-16.249,49.506-1.686,7.79,3.1,17.122,5.441,25.618,9.17,33.218,19.5,66.153,27.418,99.663,3.84,16.259,2.12,33.284-3.846,49.664-6.967,19.127-23.241,26.661-38.515,27.133-17.532.541-33.595-11.733-40.062-28.485-6.791-17.592-6.3-35.494-2.961-53.469,6.7-36.033,18.352-70.6,33.034-104.069,4.35-9.917,1.5-18.068-1.82-26.9-13.655-36.385-24.13-73.581-27.147-112.511-1.219-15.719,1.031-30.959,9.038-44.939,6.745-11.779,16.06-18.573,30.444-18.35a35.888,35.888,0,0,1,20.494,6.277c4.849,3.421,8.528,8.043,11.74,14.7C580.635,322.47,579.6,343.255,578.719,353.967Zm-36.9,138.291-4.513-.677c-2.794,8.7-5.968,17.3-8.31,26.119-6.776,25.525-14.434,50.911-19.287,76.812-2.493,13.31-1.04,27.792.971,41.4a30.323,30.323,0,0,0,29.65,25.947c12.188.262,23.382-8.178,26.457-23.917,2.733-13.991,5.04-29.328,2.127-42.911C561.491,560.426,551.048,526.472,541.815,492.258Zm-4.534-35.07,5.486.172c7.333-29.35,15.266-58.567,21.792-88.1,4.568-20.669,4.89-41.65-2.967-61.968-3.762-9.73-10.323-16.412-21.032-17.626-8.591-.974-16.455,5.219-21.452,15.08-9.152,18.058-8.571,37.507-4.98,56.019C520.415,393.186,529.416,425.077,537.281,457.188Z"/>
-    </svg>
+    <div class="ee-mono o-mono" aria-hidden="true">
+      <span class="ee-l">E</span>
+      <span class="ee-a">&amp;</span>
+      <span class="ee-l">E</span>
+    </div>
     <span class="o-pre">Con amor · Una invitación especial</span>
     <p class="o-names">Erica<span class="o-amp">&amp;</span>Emilio</p>
     <p class="o-date">Viernes · 18 de Septiembre · 2026</p>
@@ -668,11 +801,11 @@ footer > *{position:relative;z-index:1}
 
   <!-- Texto superpuesto, anclado abajo -->
   <div class="hero-content">
-    <svg class="hero-logo" viewBox="0 0 1080 849.96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <path d="M1008.736,812.456c-5.13-8.364-10.232-15.708-14.337-23.572-9.7-18.581-10.507-39.029-11.764-59.389-1.835-29.712-5.767-58.99-16.6-87.089-14.047-36.44-40.4-59.028-76.962-70.754-6.357-2.038-12.664-4.234-19.626-6.569,1.218-1.385,1.754-2.551,2.331-2.572,40.044-1.437,77.437,4.969,109.931,31.5,31.8,25.959,46.552,60.152,52.865,99.113,5,30.885,8.434,62.053,14.385,92.742,2.258,11.642,9.539,22.33,14.693,33.377,1.434,3.076,3.45,5.88,6.313,10.675-11.921,1.4-22.024,3.46-32.156,3.617-32,.5-64.12,1.858-96-.161-25.61-1.622-51.125-6.766-76.356-11.941-61.141-12.54-113.6-42.542-158.755-84.683-50.276-46.915-83.075-104.494-101.44-171.063-13.017-47.182-16.173-94.929-13.079-143.023,4.63-71.98,23.409-140.323,58.185-204.054,22.956-42.069,50.363-80.421,85.674-113.124A325.34,325.34,0,0,1,877.218,28.141c61.641-16.1,124.171-14.378,186.871-10.724a18.815,18.815,0,0,1,4.678,1.079c.484.159.759.95,1.253,1.617-35.26,20.908-40.188,57.265-47.185,92.614-9.324,47.1-10.22,95.715-25.55,141.752-16.622,49.914-50.838,81.348-100.806,96.142a46.533,46.533,0,0,1-19.775,1.158c8.772-5.466,18.6-9.774,26.122-16.613,24.419-22.192,36.61-51.562,42.607-83.02,7.907-41.475,13.542-83.381,20.307-125.077,5.28-32.548,12.859-64.143,38.66-87.688.592-.54.647-1.671,1.792-4.879-20.749,2.016-40.273,3.519-59.691,5.894-27.584,3.374-54.789,8.494-80.789,18.946-71.352,28.684-123.633,78.539-161.8,144.424-23.173,40-39.737,82.794-50.918,127.315C645.4,361.3,642.247,392.64,637.242,423.5c-.5,3.091-.067,6.333-.067,10.843,10.96,0,21.188.006,31.417,0,57.289-.039,114.578.063,171.866-.283,8.247-.05,11.357,1.861,11.262,10.76-.092,8.665-2.915,11.1-11.266,11.038-63.393-.488-126.79-.564-190.184-.874-13.093-.064-13.341-.262-13.08,12.41,1.729,83.81,24.952,160.706,76.989,227.13C758.108,750.6,815.7,786.486,885.3,802.722c38.338,8.944,77.347,10.632,116.485,10.965C1003.854,813.7,1005.936,812.972,1008.736,812.456Z"/>
-      <path d="M11.4,20.9c7.114-1.528,11.463-3.1,15.875-3.309,37.79-1.768,75.446-2.22,113.314,1.441,45.836,4.432,88.525,18,128.628,39.39,42.368,22.6,78.2,53.6,108.417,91.124,30.869,38.333,55.7,80.1,73.41,126.016,26.624,69.028,38.824,140.343,34.842,214.474a367.105,367.105,0,0,1-27.322,120.174c-31.463,76.888-84.993,134.185-156.976,174.934-30.006,16.986-61.877,28.83-95.159,37.43-56.847,14.689-114.46,14.192-172.341,9.518-7.575-.611-15.165-1.03-24.112-1.63,5.465-10.758,10.629-19.949,14.907-29.535,10.717-24.022,12.864-49.84,15-75.61,2.08-25.138,4.534-50.266,14.571-73.746,18.677-43.693,50.354-73.649,96.876-84.793,18.948-4.539,39.2-3.62,58.863-5.185l.543,4.057q-9.494,2.719-18.989,5.437c-48.378,13.744-78.321,45.525-88.584,94.328-5.089,24.2-6.359,49.205-9.223,73.861-3.009,25.911-4.559,52.246-25.519,74.29,9.872,0,17.141.063,24.409-.01,72.819-.73,142.171-14.774,203-57.1,58.764-40.888,100.349-95.507,123.522-163.532a433.062,433.062,0,0,0,23.107-125.309c.464-13.478.021-13.124-13.406-13q-91.246.823-182.5,1.25c-1.932.012-3.883-.577-5.8-.45-8.856.587-12.926-2.7-12.338-12.292.625-10.177,7.468-8.874,13.825-8.876q89.83-.027,179.662.049c3.56,0,7.133-.3,10.679-.092,6.217.36,8.923-2.025,8.127-8.527-2.514-20.531-3.4-41.369-7.445-61.583-10.3-51.5-26.341-101.324-51.542-147.58-32.3-59.287-77.28-106.442-137.4-138.406-38.988-20.729-80.66-32.5-124.28-37.84-15.22-1.865-30.509-3.164-46.811-4.829.969,2.139,1.186,3.519,1.991,4.262C101.471,63.9,108.3,96.75,114.243,129.56c7.358,40.606,12.794,81.56,20.114,122.174,4.15,23.021,13.334,44.541,25.768,64.415,9.383,15,22.364,25.738,39.847,30.419a14.275,14.275,0,0,1,6.177,3.887c-19.924,3.053-37.966-2.54-54.991-11.947-43.147-23.842-67.221-61.776-76.7-108.907-6.415-31.888-9.345-64.46-14.875-96.547C55.755,110.862,51.3,88.638,44.958,67.067,40.393,51.544,30.712,38.179,17.669,27.809,15.861,26.372,14.509,24.361,11.4,20.9Z"/>
-      <path d="M578.719,353.967c-1.489,18.048-3.277,39.723-13.939,66.336-8.523,21.273-12.21,30.84-16.249,49.506-1.686,7.79,3.1,17.122,5.441,25.618,9.17,33.218,19.5,66.153,27.418,99.663,3.84,16.259,2.12,33.284-3.846,49.664-6.967,19.127-23.241,26.661-38.515,27.133-17.532.541-33.595-11.733-40.062-28.485-6.791-17.592-6.3-35.494-2.961-53.469,6.7-36.033,18.352-70.6,33.034-104.069,4.35-9.917,1.5-18.068-1.82-26.9-13.655-36.385-24.13-73.581-27.147-112.511-1.219-15.719,1.031-30.959,9.038-44.939,6.745-11.779,16.06-18.573,30.444-18.35a35.888,35.888,0,0,1,20.494,6.277c4.849,3.421,8.528,8.043,11.74,14.7C580.635,322.47,579.6,343.255,578.719,353.967Zm-36.9,138.291-4.513-.677c-2.794,8.7-5.968,17.3-8.31,26.119-6.776,25.525-14.434,50.911-19.287,76.812-2.493,13.31-1.04,27.792.971,41.4a30.323,30.323,0,0,0,29.65,25.947c12.188.262,23.382-8.178,26.457-23.917,2.733-13.991,5.04-29.328,2.127-42.911C561.491,560.426,551.048,526.472,541.815,492.258Zm-4.534-35.07,5.486.172c7.333-29.35,15.266-58.567,21.792-88.1,4.568-20.669,4.89-41.65-2.967-61.968-3.762-9.73-10.323-16.412-21.032-17.626-8.591-.974-16.455,5.219-21.452,15.08-9.152,18.058-8.571,37.507-4.98,56.019C520.415,393.186,529.416,425.077,537.281,457.188Z"/>
-    </svg>
+    <div class="ee-mono hero-mono" aria-hidden="true">
+      <span class="ee-l">E</span>
+      <span class="ee-a">&amp;</span>
+      <span class="ee-l">E</span>
+    </div>
     <span class="hero-tag">Con amor · Les invitamos a celebrar</span>
     <h1 class="hero-nos">Nos Casamos</h1>
     <h2 class="hero-names">Erica<span class="hero-amp">&amp;</span>Emilio</h2>
@@ -683,8 +816,22 @@ footer > *{position:relative;z-index:1}
 
 <!-- ══════ CITA BÍBLICA ══════ -->
 <section id="biblia">
-  <img class="sec-flower sec-flower-l" src="img/FLOR LARGA LATERAL.svg" aria-hidden="true" alt="">
-  <img class="sec-flower sec-flower-r" src="img/FLOR LARGA LATERAL.svg" aria-hidden="true" alt="">
+  <img class="sec-flower sec-flower-l" src="img/FLOR LARGA LATERAL.svg" aria-hidden="true" alt="" style="opacity:.45">
+  <img class="sec-flower sec-flower-r" src="img/FLOR LARGA LATERAL.svg" aria-hidden="true" alt="" style="opacity:.45">
+  <!-- Ramas botánicas decorativas inline -->
+  <svg class="botanical-top" viewBox="0 0 320 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:clamp(180px,40vw,320px);opacity:.22;pointer-events:none;z-index:0">
+    <path d="M160 55 Q130 40 100 30 Q80 22 55 18 Q35 15 10 14" fill="none" stroke="#B2C1AA" stroke-width="1" stroke-linecap="round"/>
+    <path d="M160 55 Q190 40 220 30 Q240 22 265 18 Q285 15 310 14" fill="none" stroke="#B2C1AA" stroke-width="1" stroke-linecap="round"/>
+    <ellipse cx="90" cy="28" rx="7" ry="4" fill="#B2C1AA" transform="rotate(-20,90,28)"/>
+    <ellipse cx="65" cy="20" rx="6" ry="3.5" fill="#B2C1AA" transform="rotate(-28,65,20)"/>
+    <ellipse cx="115" cy="33" rx="6" ry="3" fill="#B2C1AA" transform="rotate(-12,115,33)"/>
+    <ellipse cx="230" cy="28" rx="7" ry="4" fill="#B2C1AA" transform="rotate(20,230,28)"/>
+    <ellipse cx="255" cy="20" rx="6" ry="3.5" fill="#B2C1AA" transform="rotate(28,255,20)"/>
+    <ellipse cx="205" cy="33" rx="6" ry="3" fill="#B2C1AA" transform="rotate(12,205,33)"/>
+    <circle cx="160" cy="55" r="2.5" fill="#96ADBB"/>
+    <circle cx="100" cy="30" r="2" fill="#96ADBB" opacity=".6"/>
+    <circle cx="220" cy="30" r="2" fill="#96ADBB" opacity=".6"/>
+  </svg>
   <div class="sec-inner sec-center reveal">
     <div class="biblia-rule"><span>✦</span></div>
     <p class="biblia-text">
@@ -813,14 +960,140 @@ footer > *{position:relative;z-index:1}
   </div>
 </section>
 
+<!-- ══════ ITINERARIO ══════ -->
+<section id="itinerario">
+  <!-- Flor decorativa lateral -->
+  <img class="sec-flower sec-flower-ev-r" src="img/FLOR CORTA PRINCIPAL.svg" aria-hidden="true" alt="" style="opacity:.12">
+  <img class="sec-flower sec-flower-ev-l" src="img/FLOR LARGA LATERAL.svg" aria-hidden="true" alt="" style="opacity:.1;height:50%;top:25%">
+  <div class="sec-inner">
+    <div class="sec-center reveal" style="margin-bottom:3.5rem">
+      <span class="sec-tag">El gran día</span>
+      <h2 class="sec-title">Itinerario</h2>
+      <p class="sec-sub">El orden del día más esperado</p>
+      <div class="ornament"><span>✦</span></div>
+    </div>
+
+    <div class="timeline reveal">
+
+      <div class="tl-item">
+        <div class="tl-left">
+          <span class="tl-time">2:00 PM</span>
+          <h3 class="tl-title">Recepción de Invitados</h3>
+          <p class="tl-desc">Apertura de puertas · Bienvenida</p>
+        </div>
+        <div class="tl-node">
+          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>
+          </svg>
+        </div>
+        <div class="tl-right"></div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-left"></div>
+        <div class="tl-node">
+          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="1" x2="12" y2="4"/><line x1="10" y1="2.5" x2="14" y2="2.5"/>
+            <path d="M5 6h14v14H5z"/><path d="M9 20v-5a3 3 0 016 0v5"/>
+            <path d="M5 10 Q9 7.5 12 9.5 Q15 7.5 19 10"/>
+          </svg>
+        </div>
+        <div class="tl-right">
+          <span class="tl-time">2:30 PM</span>
+          <h3 class="tl-title">Ceremonia Religiosa</h3>
+          <p class="tl-desc">Parroquia San Joaquín y Santa Ana<br>Rionegro, Antioquia</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-left">
+          <span class="tl-time">~4:00 PM</span>
+          <h3 class="tl-title">Sesión de Fotos</h3>
+          <p class="tl-desc">¡El momento de los recuerdos!</p>
+        </div>
+        <div class="tl-node">
+          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/>
+          </svg>
+        </div>
+        <div class="tl-right"></div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-left"></div>
+        <div class="tl-node">
+          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 3v4M3 5h4M6 17v4M4 19h4M13 3l4 8-4 2-4-2z"/>
+            <path d="M13 21l-1-4h-2l-1 4"/>
+            <path d="M8 21h8"/>
+          </svg>
+        </div>
+        <div class="tl-right">
+          <span class="tl-time">~5:00 PM</span>
+          <h3 class="tl-title">Traslado a la Recepción</h3>
+          <p class="tl-desc">Club El Prado · La Ceja, Antioquia</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-left">
+          <span class="tl-time">~5:30 PM</span>
+          <h3 class="tl-title">Cóctel de Bienvenida</h3>
+          <p class="tl-desc">Brindis · Aperitivos · Música</p>
+        </div>
+        <div class="tl-node">
+          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="8 21 12 17 16 21"/><line x1="12" y1="17" x2="12" y2="11"/>
+            <path d="M20.88 3.12L16 8l-4-4L7 3 3 3l5 8h8l5-8z"/>
+          </svg>
+        </div>
+        <div class="tl-right"></div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-left"></div>
+        <div class="tl-node">
+          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/>
+            <line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/>
+          </svg>
+        </div>
+        <div class="tl-right">
+          <span class="tl-time">~7:00 PM</span>
+          <h3 class="tl-title">Cena</h3>
+          <p class="tl-desc">Mesa de los novios y celebración</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-left">
+          <span class="tl-time">~8:30 PM</span>
+          <h3 class="tl-title">¡A Bailar!</h3>
+          <p class="tl-desc">Fiesta · Música · Hasta el amanecer</p>
+        </div>
+        <div class="tl-node">
+          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="var(--navy)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
+          </svg>
+        </div>
+        <div class="tl-right"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- ══════ VESTIMENTA ══════ -->
 <section id="vestimenta">
-  <img class="sec-flower sec-flower-lm" src="img/FLOR MEDIA- LATERAL.svg" aria-hidden="true" alt="" style="opacity:.4">
+  <img class="sec-flower sec-flower-lm" src="img/FLOR MEDIA- LATERAL.svg" aria-hidden="true" alt="" style="opacity:.28">
+  <img class="sec-flower sec-flower-rm" src="img/FLOR MEDIA- LATERAL.svg" aria-hidden="true" alt="" style="opacity:.2">
   <div class="sec-inner sec-center reveal">
     <span class="sec-tag">Dress Code</span>
-    <h2 class="sec-title">Código de Vestimenta</h2>
-    <p class="sec-sub">Elegancia formal · Tonos clásicos</p>
-    <div class="dress-grid">
+    <h2 class="dress-phrase">Vístanse bonitos<br>para las fotos</h2>
+    <p class="sec-sub" style="margin-bottom:1rem">Elegancia con personalidad · Formal y con onda</p>
+    <div class="ornament"><span>✦</span></div>
+
+    <div class="dress-grid" style="margin-top:1.5rem">
 
       <div class="dress-card">
         <span class="dress-icon">
@@ -829,17 +1102,15 @@ footer > *{position:relative;z-index:1}
             <path d="M9 8.5L5 22h14L15 8.5"/>
             <path d="M10.5 9.5L12 13l1.5-3.5"/>
             <line x1="12" y1="13" x2="12" y2="22"/>
-            <!-- Pocket square detail -->
-            <path d="M8.5 13.5 L8.5 11.5 L10 11.5" stroke-width=".9" opacity=".6"/>
           </svg>
         </span>
         <span class="dress-label">Caballeros</span>
         <p class="dress-desc">Traje formal o smoking.<br>Corbata o moño.</p>
         <div class="palette">
-          <div class="swatch" style="background:#1a1a2e" title="Azul marino"></div>
-          <div class="swatch" style="background:#2d4a8a" title="Azul real"></div>
-          <div class="swatch" style="background:#1a1a1a" title="Negro"></div>
-          <div class="swatch" style="background:#555" title="Gris oscuro"></div>
+          <div class="swatch" style="background:#00375E"></div>
+          <div class="swatch" style="background:#1a1a2e"></div>
+          <div class="swatch" style="background:#2d4a2d"></div>
+          <div class="swatch" style="background:#555"></div>
         </div>
       </div>
 
@@ -852,33 +1123,45 @@ footer > *{position:relative;z-index:1}
           </svg>
         </span>
         <span class="dress-label">Damas</span>
-        <p class="dress-desc">Vestido de gala o cóctel.<br>Por favor evitar el blanco.</p>
+        <p class="dress-desc">Vestido largo o de cóctel.<br>Evitar vestidos muy cortos.</p>
         <div class="palette">
-          <div class="swatch" style="background:#b8d4f0"></div>
-          <div class="swatch" style="background:#8ab4d8"></div>
+          <div class="swatch" style="background:#96ADBB"></div>
+          <div class="swatch" style="background:#B2C1AA"></div>
           <div class="swatch" style="background:#c9b1d9"></div>
-          <div class="swatch" style="background:#d4c5a9"></div>
-        </div>
-      </div>
-
-      <div class="dress-card">
-        <span class="dress-icon">
-          <svg width="40" height="40" fill="none" viewBox="0 0 24 24" stroke="var(--cobalt)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 17L7 7l4 5L12 5l1 7 4-5 3 10z"/>
-            <line x1="4" y1="17" x2="20" y2="17"/>
-            <line x1="4" y1="20" x2="20" y2="20"/>
-          </svg>
-        </span>
-        <span class="dress-label">Reservado</span>
-        <p class="dress-desc">Blanco, ivory y crema<br>son exclusivos de la novia.</p>
-        <div class="palette">
-          <div class="swatch" style="background:#fff;border-color:#ddd"></div>
-          <div class="swatch" style="background:#fffff0"></div>
-          <div class="swatch" style="background:#f5f0dc"></div>
+          <div class="swatch" style="background:#d4a5a5"></div>
         </div>
       </div>
 
     </div>
+
+    <!-- Notas importantes -->
+    <div class="dress-notes-wrap">
+      <div class="dress-note">
+        <div class="dress-note-icon">
+          <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="var(--sage)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+          </svg>
+        </div>
+        <p>Por favor <strong>evitar vestidos muy cortos</strong> — queremos que todos luzcan elegantes en las fotos.</p>
+      </div>
+      <div class="dress-note reserved">
+        <div class="dress-note-icon">
+          <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="var(--navy)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <div>
+          <p><strong>Blanco, beige, crema e ivory</strong> están reservados para los novios.</p>
+          <div class="reserved-swatches">
+            <div class="rswatch" style="background:#fff;border-color:#ddd" title="Blanco"></div>
+            <div class="rswatch" style="background:#F5F0DC" title="Crema"></div>
+            <div class="rswatch" style="background:#FFFFF0" title="Ivory"></div>
+            <div class="rswatch" style="background:#F5DCBE" title="Beige"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -1003,11 +1286,9 @@ footer > *{position:relative;z-index:1}
 <!-- ══════ FOOTER ══════ -->
 <footer>
   <div class="f-seal-wrap">
-    <svg viewBox="0 0 1080 849.96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="fill:var(--blue-d);width:100%;height:auto">
-      <path d="M1008.736,812.456c-5.13-8.364-10.232-15.708-14.337-23.572-9.7-18.581-10.507-39.029-11.764-59.389-1.835-29.712-5.767-58.99-16.6-87.089-14.047-36.44-40.4-59.028-76.962-70.754-6.357-2.038-12.664-4.234-19.626-6.569,1.218-1.385,1.754-2.551,2.331-2.572,40.044-1.437,77.437,4.969,109.931,31.5,31.8,25.959,46.552,60.152,52.865,99.113,5,30.885,8.434,62.053,14.385,92.742,2.258,11.642,9.539,22.33,14.693,33.377,1.434,3.076,3.45,5.88,6.313,10.675-11.921,1.4-22.024,3.46-32.156,3.617-32,.5-64.12,1.858-96-.161-25.61-1.622-51.125-6.766-76.356-11.941-61.141-12.54-113.6-42.542-158.755-84.683-50.276-46.915-83.075-104.494-101.44-171.063-13.017-47.182-16.173-94.929-13.079-143.023,4.63-71.98,23.409-140.323,58.185-204.054,22.956-42.069,50.363-80.421,85.674-113.124A325.34,325.34,0,0,1,877.218,28.141c61.641-16.1,124.171-14.378,186.871-10.724a18.815,18.815,0,0,1,4.678,1.079c.484.159.759.95,1.253,1.617-35.26,20.908-40.188,57.265-47.185,92.614-9.324,47.1-10.22,95.715-25.55,141.752-16.622,49.914-50.838,81.348-100.806,96.142a46.533,46.533,0,0,1-19.775,1.158c8.772-5.466,18.6-9.774,26.122-16.613,24.419-22.192,36.61-51.562,42.607-83.02,7.907-41.475,13.542-83.381,20.307-125.077,5.28-32.548,12.859-64.143,38.66-87.688.592-.54.647-1.671,1.792-4.879-20.749,2.016-40.273,3.519-59.691,5.894-27.584,3.374-54.789,8.494-80.789,18.946-71.352,28.684-123.633,78.539-161.8,144.424-23.173,40-39.737,82.794-50.918,127.315C645.4,361.3,642.247,392.64,637.242,423.5c-.5,3.091-.067,6.333-.067,10.843,10.96,0,21.188.006,31.417,0,57.289-.039,114.578.063,171.866-.283,8.247-.05,11.357,1.861,11.262,10.76-.092,8.665-2.915,11.1-11.266,11.038-63.393-.488-126.79-.564-190.184-.874-13.093-.064-13.341-.262-13.08,12.41,1.729,83.81,24.952,160.706,76.989,227.13C758.108,750.6,815.7,786.486,885.3,802.722c38.338,8.944,77.347,10.632,116.485,10.965C1003.854,813.7,1005.936,812.972,1008.736,812.456Z"/>
-      <path d="M11.4,20.9c7.114-1.528,11.463-3.1,15.875-3.309,37.79-1.768,75.446-2.22,113.314,1.441,45.836,4.432,88.525,18,128.628,39.39,42.368,22.6,78.2,53.6,108.417,91.124,30.869,38.333,55.7,80.1,73.41,126.016,26.624,69.028,38.824,140.343,34.842,214.474a367.105,367.105,0,0,1-27.322,120.174c-31.463,76.888-84.993,134.185-156.976,174.934-30.006,16.986-61.877,28.83-95.159,37.43-56.847,14.689-114.46,14.192-172.341,9.518-7.575-.611-15.165-1.03-24.112-1.63,5.465-10.758,10.629-19.949,14.907-29.535,10.717-24.022,12.864-49.84,15-75.61,2.08-25.138,4.534-50.266,14.571-73.746,18.677-43.693,50.354-73.649,96.876-84.793,18.948-4.539,39.2-3.62,58.863-5.185l.543,4.057q-9.494,2.719-18.989,5.437c-48.378,13.744-78.321,45.525-88.584,94.328-5.089,24.2-6.359,49.205-9.223,73.861-3.009,25.911-4.559,52.246-25.519,74.29,9.872,0,17.141.063,24.409-.01,72.819-.73,142.171-14.774,203-57.1,58.764-40.888,100.349-95.507,123.522-163.532a433.062,433.062,0,0,0,23.107-125.309c.464-13.478.021-13.124-13.406-13q-91.246.823-182.5,1.25c-1.932.012-3.883-.577-5.8-.45-8.856.587-12.926-2.7-12.338-12.292.625-10.177,7.468-8.874,13.825-8.876q89.83-.027,179.662.049c3.56,0,7.133-.3,10.679-.092,6.217.36,8.923-2.025,8.127-8.527-2.514-20.531-3.4-41.369-7.445-61.583-10.3-51.5-26.341-101.324-51.542-147.58-32.3-59.287-77.28-106.442-137.4-138.406-38.988-20.729-80.66-32.5-124.28-37.84-15.22-1.865-30.509-3.164-46.811-4.829.969,2.139,1.186,3.519,1.991,4.262C101.471,63.9,108.3,96.75,114.243,129.56c7.358,40.606,12.794,81.56,20.114,122.174,4.15,23.021,13.334,44.541,25.768,64.415,9.383,15,22.364,25.738,39.847,30.419a14.275,14.275,0,0,1,6.177,3.887c-19.924,3.053-37.966-2.54-54.991-11.947-43.147-23.842-67.221-61.776-76.7-108.907-6.415-31.888-9.345-64.46-14.875-96.547C55.755,110.862,51.3,88.638,44.958,67.067,40.393,51.544,30.712,38.179,17.669,27.809,15.861,26.372,14.509,24.361,11.4,20.9Z"/>
-      <path d="M578.719,353.967c-1.489,18.048-3.277,39.723-13.939,66.336-8.523,21.273-12.21,30.84-16.249,49.506-1.686,7.79,3.1,17.122,5.441,25.618,9.17,33.218,19.5,66.153,27.418,99.663,3.84,16.259,2.12,33.284-3.846,49.664-6.967,19.127-23.241,26.661-38.515,27.133-17.532.541-33.595-11.733-40.062-28.485-6.791-17.592-6.3-35.494-2.961-53.469,6.7-36.033,18.352-70.6,33.034-104.069,4.35-9.917,1.5-18.068-1.82-26.9-13.655-36.385-24.13-73.581-27.147-112.511-1.219-15.719,1.031-30.959,9.038-44.939,6.745-11.779,16.06-18.573,30.444-18.35a35.888,35.888,0,0,1,20.494,6.277c4.849,3.421,8.528,8.043,11.74,14.7C580.635,322.47,579.6,343.255,578.719,353.967Zm-36.9,138.291-4.513-.677c-2.794,8.7-5.968,17.3-8.31,26.119-6.776,25.525-14.434,50.911-19.287,76.812-2.493,13.31-1.04,27.792.971,41.4a30.323,30.323,0,0,0,29.65,25.947c12.188.262,23.382-8.178,26.457-23.917,2.733-13.991,5.04-29.328,2.127-42.911C561.491,560.426,551.048,526.472,541.815,492.258Zm-4.534-35.07,5.486.172c7.333-29.35,15.266-58.567,21.792-88.1,4.568-20.669,4.89-41.65-2.967-61.968-3.762-9.73-10.323-16.412-21.032-17.626-8.591-.974-16.455,5.219-21.452,15.08-9.152,18.058-8.571,37.507-4.98,56.019C520.415,393.186,529.416,425.077,537.281,457.188Z"/>
-    </svg>
+    <div class="f-seal-ee" aria-hidden="true">
+      <span>E&amp;E</span>
+    </div>
   </div>
 
   <p class="f-names">Erica &amp; Emilio</p>
