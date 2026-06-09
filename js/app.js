@@ -297,3 +297,31 @@ window.addEventListener('load', () => {
     setTimeout(() => loader.remove(), 1000);
   }, 1500);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const btnTransferencia = document.getElementById('btn-transferencia');
+  const modalTransferencia = document.getElementById('modal-transferencia');
+  const closeModal = document.getElementById('close-modal');
+
+  // Verifica que los elementos existan antes de añadir eventos
+  if (btnTransferencia && modalTransferencia && closeModal) {
+    
+    // Abrir el modal
+    btnTransferencia.addEventListener('click', (e) => {
+      e.preventDefault(); // Evita que la página salte hacia arriba
+      modalTransferencia.classList.add('active');
+    });
+
+    // Cerrar el modal con la X
+    closeModal.addEventListener('click', () => {
+      modalTransferencia.classList.remove('active');
+    });
+
+    // Cerrar el modal al hacer clic en el fondo oscuro
+    window.addEventListener('click', (e) => {
+      if (e.target === modalTransferencia) {
+        modalTransferencia.classList.remove('active');
+      }
+    });
+  }
+});

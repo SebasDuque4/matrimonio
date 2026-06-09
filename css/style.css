@@ -1627,7 +1627,7 @@ color:var(--navy);
    SECCIÓN DE CITA / FRASE
 ══════════════════════════════════════════ */
 .section-quote{
-  background:linear-gradient(135deg,#5a7260 0%,#6e8870 40%,#4f6654 100%);
+  background:linear-gradient(135deg,#5f7795 0%,#4D6582 40%,#3e5877 100%);
   padding:90px 30px;
   text-align:center;
   position:relative;
@@ -1688,3 +1688,77 @@ color:var(--navy);
 .section-quote.reveal{opacity:0;transform:translateY(32px);transition:opacity 1.2s ease,transform 1.2s ease}
 .section-quote.reveal.active{opacity:1;transform:none}
 
+
+/* ══ ESTILOS DEL MODAL ══ */
+.modal-overlay {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Clase que se añade con JS para mostrarlo */
+.modal-overlay.active {
+  display: flex;
+  opacity: 1;
+}
+
+.modal-content {
+  background-color: #faf9f6; /* Tono off-white/crema */
+  padding: 2.5rem;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  max-width: 90%;
+  width: 400px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.2s ease;
+}
+
+.modal-close:hover {
+  color: #000;
+}
+
+.modal-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.modal-desc {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 1rem;
+}
+
+.modal-account {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0.5rem 0 1.5rem 0;
+  color: #222;
+  letter-spacing: 2px;
+}
+
+.modal-thanks {
+  font-style: italic;
+  color: #777;
+}
