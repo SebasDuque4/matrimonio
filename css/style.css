@@ -1626,12 +1626,12 @@ color:var(--navy);
 /* ══════════════════════════════════════════
    SECCIÓN DE CITA / FRASE
 ══════════════════════════════════════════ */
-.section-quote{
-  background:linear-gradient(135deg,#5f7795 0%,#4D6582 40%,#3e5877 100%);
-  padding:90px 30px;
-  text-align:center;
-  position:relative;
-  overflow:hidden;
+.section-quote {
+  background: linear-gradient(135deg, #8ba189 0%, #a2ba9e 40%, #798f76 100%);
+  padding: 90px 30px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 /* Manchas de acuarela decorativas */
 .section-quote::before{
@@ -1761,4 +1761,10 @@ color:var(--navy);
 .modal-thanks {
   font-style: italic;
   color: #777;
+}
+.gift-icon {
+  display: block;
+  margin: 0 auto 1.5rem auto; /* Centrado horizontal y margen inferior */
+  max-width: 80px; /* Ajusta el tamaño máximo según tu imagen */
+  height: auto;
 }
